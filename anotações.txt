@@ -1,0 +1,7 @@
+Anotações
+
+- Concatenar letras até encontrar espaço em branco ou caracteres especiais;
+- Compara a palavra concatenada com a lista de palavras reservadas;
+- Se não for uma palavra reservada comparar com as demais listas;
+- Se ela estiver dentro de alguma das listas disponíveis armazene ela dentro do regitro com seu token, lexema, valor, posição e zere a variável "concS";
+- 
