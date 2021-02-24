@@ -16,9 +16,9 @@
       // }
       if($linha[$col]!=='\n' && $linha[$col]!==' '){
         $token .= $linha[$col];
-        // verificaToken($token);
+        // verifToken($token);
       }else{
-        var_dump(verificaPalavReser($token));
+        var_dump(verifPalavReser($token));
         $token = null;
         dd();
       }
@@ -39,31 +39,72 @@
     die;
   }
 
-$palavraReservada = array('programa','begin', 'end','if','then','else','while',
-  'do','until','repeat','integer','real','all','and','or','string'); # '/(programa | begin | end | if | then | else | while | do | until | repeat | string | integer | real | all | and | or)/'
+  $palavraReservada = array('programa','begin', 'end','if','then','else','while',
+    'do','until','repeat','integer','real','all','and','or','string'); # '/(programa | begin | end | if | then | else | while | do | until | repeat | string | integer | real | all | and | or)/'
 
-  //  expReg: '/^[a-z]{1,10}$/i'   '/^[a-z]+$/i'
+    //  expReg: '/^[a-z]{1,10}$/i'   '/^[a-z]+$/i'
 
-$aritmetico = array('+', '-', '*', '/'); # '/( + | - | * | \/ )/'
+  $aritmetico = array('+', '-', '*', '/'); # '/( + | - | * | \/ )/'
 
-$booleanos = array('or', 'and'); # '/( or | and)/'
+  $booleanos = array('or', 'and'); # '/( or | and)/'
 
-$relacional = array('<','>','<=','>=','=','<>'); # '/(< | > | <= | >= | = | <>)/' 
- 
-$comentario = array('{','}'); # '/( { | } )/' 
+  $relacional = array('<','>','<=','>=','=','<>'); # '/(< | > | <= | >= | = | <>)/' 
+  
+  $comentario = array('{','}'); # '/( { | } )/' 
 
-$especiais = array('(', ')', ';', ',', '.', ':', '='); # '/( \( | \) | ; | , | . | : | =)/'
+  $especiais = array('(', ')', ';', ',', '.', ':', '='); # '/( \( | \) | ; | , | . | : | =)/'
 
-$atribuicao = array(':', '=', ':='); # '/( : | = | := )/'
+  $atribuicao = array(':', '=', ':='); # '/( : | = | := )/'
 
-$alfabeto = array('a','b','c','d','e','f','g','h','i','j','l','m'
- ,'n','o','p','q','r','s','t','u','v','x','z','w','y','k'); # '/(^[-|+]?[a-z]+$)/'
+  $alfabeto = array('a','b','c','d','e','f','g','h','i','j','l','m'
+  ,'n','o','p','q','r','s','t','u','v','x','z','w','y','k'); # '/(^[-|+]?[a-z]+$)/'
 
-$numerico = array('0','1','2','3','4','5','6','7','8','9'); # #inteiro# '/(^[0-9]+$)/'  #real# '/(^[-|+]?[0-9]+.[0-9]{1,5}$)/'
+  $numerico = array('0','1','2','3','4','5','6','7','8','9'); # #inteiro# '/(^[0-9]+$)/'  #real# '/(^[-|+]?[0-9]+.[0-9]{1,5}$)/'
 
-function verificaPalavReser(string $token):bool
-{
-  $regra = '/^(programa|begin|end|if|then|else|while|do|until|repeat|string |integer|real|all|and|or)$/';   
-  return preg_match($regra, $token);
+  function verifPalavReser(string $token):bool
+  {
+    $regra = '/^(programa|begin|end|if|then|else|while|do|until|repeat|string |integer|real|all|and|or)$/';
+    return preg_match($regra, $token);
+  }
+
+  function verifAritmetico(string $token):bool
+  {
+    $regra = '/^(+|-|*|\/)$/';
+    return preg_match($regra, $token);
+  }
+  function verifBooleano(string $token):bool
+  {
+    $regra = '/^(or|and)$/';
+    return preg_match($regra, $token);
+  }
+  function verifRelacional(string $token):bool
+  {
+    $regra = '/^(<|>|<=|>=|=|<>)$/';
+    return preg_match($regra, $token);
+  }
+  function verifComentario(string $token):bool
+  {
+    $regra = '/^({|})$/';
+    return preg_match($regra, $token);
+  }
+  function verifEspeciais(string $token):bool
+  {
+    $regra = '/^(\(|\)|;|,|.|:|=)$/';
+    return preg_match($regra, $token);
+  }
+  function verifAtribuicao(string $token):bool
+  {
+    $regra = '/^(:|=|:=)$/';
+    return preg_match($regra, $token);
+  }
+  function verifAlfabeto(string $token):bool
+  {
+    $regra = '/^[-|+]?[a-z]+$/';
+    return preg_match($regra, $token);
+  }
+  function verifNumerico(string $token):bool
+  {
+    $regra = '/^[0-9]+$/';
+    return preg_match($regra, $token);
 }
 ?>
