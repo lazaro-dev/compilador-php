@@ -1,4 +1,4 @@
-programa teste;
+ programa teste;
 integer x, y, z;
 begin
    begin
