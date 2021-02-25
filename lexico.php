@@ -4,7 +4,7 @@
   $file = fopen($f,"r");
 
   $linhaCont = 0;
-  while($linha = fgets($file)){    
+  while($linha = fgets($file)){
     if($linha){
       $linha = trim($linha);
       $tamanhoLinha = strlen($linha);
@@ -88,12 +88,6 @@
       preg_match($regra, $c) || verifAritmetico($c) || 
       verifAlfabeto($c) || verifNumerico($c)
     );
-  }
-
-  function dd(...$var)
-  {
-    var_dump($var);
-    die;
   }
 
   function pushTabela(string $token, int $lin, int $col, string $lexema=null,  string $valor=null):void
@@ -183,6 +177,12 @@
   function erro(int $lin, int $col, string $codigo = '500',string $err = 'TOKEN Invalido'):void
   {
     dd('Erro '.$codigo.' na linha '.$lin.':'.$col.' '.$err);
+  }
+
+  function dd(...$var)
+  {
+    var_dump($var);
+    die;
   }
 
   
