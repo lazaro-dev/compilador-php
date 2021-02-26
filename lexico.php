@@ -81,6 +81,7 @@
   }
   
   fclose($file);
+  gravar($tabela);
   dd($tabela);
 
   function verifProxVariavel(string $c){
@@ -178,6 +179,14 @@
   function erro(int $lin, int $col,string $tokenInv ,string $codigo = '1',string $err = 'TOKEN Invalido'):void
   {
     dd('Erro '.$codigo.' na linha '.$lin.':'.$col.' '.$err.' '.$tokenInv);
+  }
+
+  function gravar(array $tabela)
+  {
+    $f = fopen('./tabelas/lexica/tabela.txt','w');
+    fwrite($f,  print_r($tabela, TRUE));
+    fclose($f);
+    // dd($tabela);
   }
 
   function dd(...$var)

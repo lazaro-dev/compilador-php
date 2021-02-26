@@ -1,0 +1,1929 @@
+Array
+(
+    [0] => Array
+        (
+            [token] => Programa
+            [lexema] => 
+            [valor] => 
+            [lin] => 2
+            [col] => 1
+        )
+
+    [1] => Array
+        (
+            [token] => ID
+            [lexema] => teste
+            [valor] => 
+            [lin] => 2
+            [col] => 10
+        )
+
+    [2] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 2
+            [col] => 15
+        )
+
+    [3] => Array
+        (
+            [token] => Integer
+            [lexema] => 
+            [valor] => 
+            [lin] => 3
+            [col] => 1
+        )
+
+    [4] => Array
+        (
+            [token] => ID
+            [lexema] => i1
+            [valor] => 
+            [lin] => 3
+            [col] => 10
+        )
+
+    [5] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 3
+            [col] => 12
+        )
+
+    [6] => Array
+        (
+            [token] => ID
+            [lexema] => i2
+            [valor] => 
+            [lin] => 3
+            [col] => 14
+        )
+
+    [7] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 3
+            [col] => 16
+        )
+
+    [8] => Array
+        (
+            [token] => ID
+            [lexema] => i3
+            [valor] => 
+            [lin] => 3
+            [col] => 18
+        )
+
+    [9] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 3
+            [col] => 21
+        )
+
+    [10] => Array
+        (
+            [token] => String
+            [lexema] => 
+            [valor] => 
+            [lin] => 4
+            [col] => 1
+        )
+
+    [11] => Array
+        (
+            [token] => ID
+            [lexema] => s1
+            [valor] => 
+            [lin] => 4
+            [col] => 8
+        )
+
+    [12] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 4
+            [col] => 10
+        )
+
+    [13] => Array
+        (
+            [token] => ID
+            [lexema] => s2
+            [valor] => 
+            [lin] => 4
+            [col] => 12
+        )
+
+    [14] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 4
+            [col] => 14
+        )
+
+    [15] => Array
+        (
+            [token] => ID
+            [lexema] => s3
+            [valor] => 
+            [lin] => 4
+            [col] => 16
+        )
+
+    [16] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 4
+            [col] => 18
+        )
+
+    [17] => Array
+        (
+            [token] => Integer
+            [lexema] => 
+            [valor] => 
+            [lin] => 5
+            [col] => 1
+        )
+
+    [18] => Array
+        (
+            [token] => ID
+            [lexema] => i4
+            [valor] => 
+            [lin] => 5
+            [col] => 9
+        )
+
+    [19] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 5
+            [col] => 11
+        )
+
+    [20] => Array
+        (
+            [token] => ID
+            [lexema] => i5
+            [valor] => 
+            [lin] => 5
+            [col] => 13
+        )
+
+    [21] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 5
+            [col] => 15
+        )
+
+    [22] => Array
+        (
+            [token] => ID
+            [lexema] => i6
+            [valor] => 
+            [lin] => 5
+            [col] => 17
+        )
+
+    [23] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 5
+            [col] => 19
+        )
+
+    [24] => Array
+        (
+            [token] => Real
+            [lexema] => 
+            [valor] => 
+            [lin] => 6
+            [col] => 1
+        )
+
+    [25] => Array
+        (
+            [token] => ID
+            [lexema] => r1
+            [valor] => 
+            [lin] => 6
+            [col] => 6
+        )
+
+    [26] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 6
+            [col] => 8
+        )
+
+    [27] => Array
+        (
+            [token] => ID
+            [lexema] => r2
+            [valor] => 
+            [lin] => 6
+            [col] => 10
+        )
+
+    [28] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 6
+            [col] => 12
+        )
+
+    [29] => Array
+        (
+            [token] => ID
+            [lexema] => r3
+            [valor] => 
+            [lin] => 6
+            [col] => 14
+        )
+
+    [30] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 6
+            [col] => 16
+        )
+
+    [31] => Array
+        (
+            [token] => ID
+            [lexema] => r4
+            [valor] => 
+            [lin] => 6
+            [col] => 18
+        )
+
+    [32] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 6
+            [col] => 20
+        )
+
+    [33] => Array
+        (
+            [token] => Begin
+            [lexema] => 
+            [valor] => 
+            [lin] => 8
+            [col] => 1
+        )
+
+    [34] => Array
+        (
+            [token] => Begin
+            [lexema] => 
+            [valor] => 
+            [lin] => 10
+            [col] => 1
+        )
+
+    [35] => Array
+        (
+            [token] => ID
+            [lexema] => I4
+            [valor] => 
+            [lin] => 12
+            [col] => 1
+        )
+
+    [36] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 12
+            [col] => 4
+        )
+
+    [37] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 10
+            [lin] => 12
+            [col] => 7
+        )
+
+    [38] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 12
+            [col] => 9
+        )
+
+    [39] => Array
+        (
+            [token] => ID
+            [lexema] => i4
+            [valor] => 
+            [lin] => 13
+            [col] => 1
+        )
+
+    [40] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 13
+            [col] => 4
+        )
+
+    [41] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 20
+            [lin] => 13
+            [col] => 7
+        )
+
+    [42] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 13
+            [col] => 9
+        )
+
+    [43] => Array
+        (
+            [token] => ID
+            [lexema] => I2
+            [valor] => 
+            [lin] => 14
+            [col] => 1
+        )
+
+    [44] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 14
+            [col] => 5
+        )
+
+    [45] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 30
+            [lin] => 14
+            [col] => 8
+        )
+
+    [46] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 14
+            [col] => 10
+        )
+
+    [47] => Array
+        (
+            [token] => ID
+            [lexema] => R1
+            [valor] => 
+            [lin] => 15
+            [col] => 1
+        )
+
+    [48] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 15
+            [col] => 4
+        )
+
+    [49] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 1
+            [lin] => 15
+            [col] => 7
+        )
+
+    [50] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 15
+            [col] => 8
+        )
+
+    [51] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 5
+            [lin] => 15
+            [col] => 9
+        )
+
+    [52] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 15
+            [col] => 10
+        )
+
+    [53] => Array
+        (
+            [token] => ID
+            [lexema] => I5
+            [valor] => 
+            [lin] => 16
+            [col] => 1
+        )
+
+    [54] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 16
+            [col] => 4
+        )
+
+    [55] => Array
+        (
+            [token] => ID
+            [lexema] => i4
+            [valor] => 
+            [lin] => 16
+            [col] => 7
+        )
+
+    [56] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 16
+            [col] => 9
+        )
+
+    [57] => Array
+        (
+            [token] => ID
+            [lexema] => R2
+            [valor] => 
+            [lin] => 17
+            [col] => 1
+        )
+
+    [58] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 17
+            [col] => 4
+        )
+
+    [59] => Array
+        (
+            [token] => ID
+            [lexema] => r1
+            [valor] => 
+            [lin] => 17
+            [col] => 7
+        )
+
+    [60] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 17
+            [col] => 9
+        )
+
+    [61] => Array
+        (
+            [token] => ID
+            [lexema] => R3
+            [valor] => 
+            [lin] => 18
+            [col] => 1
+        )
+
+    [62] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 18
+            [col] => 4
+        )
+
+    [63] => Array
+        (
+            [token] => ID
+            [lexema] => i1
+            [valor] => 
+            [lin] => 18
+            [col] => 7
+        )
+
+    [64] => Array
+        (
+            [token] => +
+            [lexema] => 
+            [valor] => 
+            [lin] => 18
+            [col] => 10
+        )
+
+    [65] => Array
+        (
+            [token] => ID
+            [lexema] => r1
+            [valor] => 
+            [lin] => 18
+            [col] => 12
+        )
+
+    [66] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 18
+            [col] => 14
+        )
+
+    [67] => Array
+        (
+            [token] => ID
+            [lexema] => R4
+            [valor] => 
+            [lin] => 19
+            [col] => 1
+        )
+
+    [68] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 19
+            [col] => 4
+        )
+
+    [69] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 19
+            [col] => 7
+        )
+
+    [70] => Array
+        (
+            [token] => ID
+            [lexema] => i1
+            [valor] => 
+            [lin] => 19
+            [col] => 8
+        )
+
+    [71] => Array
+        (
+            [token] => /
+            [lexema] => 
+            [valor] => 
+            [lin] => 19
+            [col] => 11
+        )
+
+    [72] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 10
+            [lin] => 19
+            [col] => 13
+        )
+
+    [73] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 19
+            [col] => 15
+        )
+
+    [74] => Array
+        (
+            [token] => *
+            [lexema] => 
+            [valor] => 
+            [lin] => 19
+            [col] => 17
+        )
+
+    [75] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 19
+            [col] => 19
+        )
+
+    [76] => Array
+        (
+            [token] => ID
+            [lexema] => r1
+            [valor] => 
+            [lin] => 19
+            [col] => 20
+        )
+
+    [77] => Array
+        (
+            [token] => +
+            [lexema] => 
+            [valor] => 
+            [lin] => 19
+            [col] => 23
+        )
+
+    [78] => Array
+        (
+            [token] => ID
+            [lexema] => i2
+            [valor] => 
+            [lin] => 19
+            [col] => 25
+        )
+
+    [79] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 19
+            [col] => 27
+        )
+
+    [80] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 19
+            [col] => 28
+        )
+
+    [81] => Array
+        (
+            [token] => ID
+            [lexema] => R4
+            [valor] => 
+            [lin] => 20
+            [col] => 1
+        )
+
+    [82] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 4
+        )
+
+    [83] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 7
+        )
+
+    [84] => Array
+        (
+            [token] => ID
+            [lexema] => r4
+            [valor] => 
+            [lin] => 20
+            [col] => 8
+        )
+
+    [85] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 10
+        )
+
+    [86] => Array
+        (
+            [token] => +
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 12
+        )
+
+    [87] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 14
+        )
+
+    [88] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 15
+        )
+
+    [89] => Array
+        (
+            [token] => ID
+            [lexema] => i1
+            [valor] => 
+            [lin] => 20
+            [col] => 16
+        )
+
+    [90] => Array
+        (
+            [token] => /
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 19
+        )
+
+    [91] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 15
+            [lin] => 20
+            [col] => 21
+        )
+
+    [92] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 23
+        )
+
+    [93] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 2
+            [lin] => 20
+            [col] => 24
+        )
+
+    [94] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 25
+        )
+
+    [95] => Array
+        (
+            [token] => *
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 27
+        )
+
+    [96] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 29
+        )
+
+    [97] => Array
+        (
+            [token] => ID
+            [lexema] => r1
+            [valor] => 
+            [lin] => 20
+            [col] => 30
+        )
+
+    [98] => Array
+        (
+            [token] => +
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 33
+        )
+
+    [99] => Array
+        (
+            [token] => ID
+            [lexema] => i2
+            [valor] => 
+            [lin] => 20
+            [col] => 35
+        )
+
+    [100] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 37
+        )
+
+    [101] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 38
+        )
+
+    [102] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 39
+        )
+
+    [103] => Array
+        (
+            [token] => if
+            [lexema] => 
+            [valor] => 
+            [lin] => 21
+            [col] => 1
+        )
+
+    [104] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 21
+            [col] => 4
+        )
+
+    [105] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 5
+            [lin] => 21
+            [col] => 5
+        )
+
+    [106] => Array
+        (
+            [token] => >
+            [lexema] => 
+            [valor] => 
+            [lin] => 21
+            [col] => 7
+        )
+
+    [107] => Array
+        (
+            [token] => ID
+            [lexema] => r2
+            [valor] => 
+            [lin] => 21
+            [col] => 9
+        )
+
+    [108] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 21
+            [col] => 11
+        )
+
+    [109] => Array
+        (
+            [token] => then
+            [lexema] => 
+            [valor] => 
+            [lin] => 21
+            [col] => 13
+        )
+
+    [110] => Array
+        (
+            [token] => All
+            [lexema] => 
+            [valor] => 
+            [lin] => 22
+            [col] => 1
+        )
+
+    [111] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 22
+            [col] => 5
+        )
+
+    [112] => Array
+        (
+            [token] => ID
+            [lexema] => s1
+            [valor] => 
+            [lin] => 22
+            [col] => 6
+        )
+
+    [113] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 22
+            [col] => 8
+        )
+
+    [114] => Array
+        (
+            [token] => ID
+            [lexema] => s2
+            [valor] => 
+            [lin] => 22
+            [col] => 10
+        )
+
+    [115] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 22
+            [col] => 12
+        )
+
+    [116] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 22
+            [col] => 13
+        )
+
+    [117] => Array
+        (
+            [token] => else
+            [lexema] => 
+            [valor] => 
+            [lin] => 23
+            [col] => 1
+        )
+
+    [118] => Array
+        (
+            [token] => Begin
+            [lexema] => 
+            [valor] => 
+            [lin] => 24
+            [col] => 1
+        )
+
+    [119] => Array
+        (
+            [token] => while
+            [lexema] => 
+            [valor] => 
+            [lin] => 25
+            [col] => 1
+        )
+
+    [120] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 25
+            [col] => 7
+        )
+
+    [121] => Array
+        (
+            [token] => ID
+            [lexema] => r2
+            [valor] => 
+            [lin] => 25
+            [col] => 8
+        )
+
+    [122] => Array
+        (
+            [token] => <
+            [lexema] => 
+            [valor] => 
+            [lin] => 25
+            [col] => 11
+        )
+
+    [123] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 100
+            [lin] => 25
+            [col] => 13
+        )
+
+    [124] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 25
+            [col] => 16
+        )
+
+    [125] => Array
+        (
+            [token] => do
+            [lexema] => 
+            [valor] => 
+            [lin] => 25
+            [col] => 18
+        )
+
+    [126] => Array
+        (
+            [token] => ID
+            [lexema] => R2
+            [valor] => 
+            [lin] => 26
+            [col] => 1
+        )
+
+    [127] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 26
+            [col] => 4
+        )
+
+    [128] => Array
+        (
+            [token] => ID
+            [lexema] => r2
+            [valor] => 
+            [lin] => 26
+            [col] => 7
+        )
+
+    [129] => Array
+        (
+            [token] => +
+            [lexema] => 
+            [valor] => 
+            [lin] => 26
+            [col] => 10
+        )
+
+    [130] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 1
+            [lin] => 26
+            [col] => 12
+        )
+
+    [131] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 26
+            [col] => 13
+        )
+
+    [132] => Array
+        (
+            [token] => repeat
+            [lexema] => 
+            [valor] => 
+            [lin] => 27
+            [col] => 1
+        )
+
+    [133] => Array
+        (
+            [token] => Begin
+            [lexema] => 
+            [valor] => 
+            [lin] => 28
+            [col] => 1
+        )
+
+    [134] => Array
+        (
+            [token] => ID
+            [lexema] => R2
+            [valor] => 
+            [lin] => 29
+            [col] => 1
+        )
+
+    [135] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 29
+            [col] => 4
+        )
+
+    [136] => Array
+        (
+            [token] => ID
+            [lexema] => r2
+            [valor] => 
+            [lin] => 29
+            [col] => 7
+        )
+
+    [137] => Array
+        (
+            [token] => +
+            [lexema] => 
+            [valor] => 
+            [lin] => 29
+            [col] => 10
+        )
+
+    [138] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 2
+            [lin] => 29
+            [col] => 12
+        )
+
+    [139] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 29
+            [col] => 13
+        )
+
+    [140] => Array
+        (
+            [token] => ID
+            [lexema] => R3
+            [valor] => 
+            [lin] => 30
+            [col] => 1
+        )
+
+    [141] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 30
+            [col] => 4
+        )
+
+    [142] => Array
+        (
+            [token] => ID
+            [lexema] => r3
+            [valor] => 
+            [lin] => 30
+            [col] => 7
+        )
+
+    [143] => Array
+        (
+            [token] => +
+            [lexema] => 
+            [valor] => 
+            [lin] => 30
+            [col] => 10
+        )
+
+    [144] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 3
+            [lin] => 30
+            [col] => 12
+        )
+
+    [145] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 30
+            [col] => 13
+        )
+
+    [146] => Array
+        (
+            [token] => End
+            [lexema] => 
+            [valor] => 
+            [lin] => 31
+            [col] => 1
+        )
+
+    [147] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 31
+            [col] => 5
+        )
+
+    [148] => Array
+        (
+            [token] => until
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 1
+        )
+
+    [149] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 7
+        )
+
+    [150] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 9
+        )
+
+    [151] => Array
+        (
+            [token] => ID
+            [lexema] => r1
+            [valor] => 
+            [lin] => 32
+            [col] => 10
+        )
+
+    [152] => Array
+        (
+            [token] => =
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 13
+        )
+
+    [153] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 20
+            [lin] => 32
+            [col] => 15
+        )
+
+    [154] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 17
+        )
+
+    [155] => Array
+        (
+            [token] => or
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 19
+        )
+
+    [156] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 22
+        )
+
+    [157] => Array
+        (
+            [token] => ID
+            [lexema] => r3
+            [valor] => 
+            [lin] => 32
+            [col] => 23
+        )
+
+    [158] => Array
+        (
+            [token] => <
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 26
+        )
+
+    [159] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 30
+            [lin] => 32
+            [col] => 28
+        )
+
+    [160] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 30
+        )
+
+    [161] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 31
+        )
+
+    [162] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 32
+        )
+
+    [163] => Array
+        (
+            [token] => End
+            [lexema] => 
+            [valor] => 
+            [lin] => 33
+            [col] => 1
+        )
+
+    [164] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 33
+            [col] => 5
+        )
+
+    [165] => Array
+        (
+            [token] => If
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 1
+        )
+
+    [166] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 4
+        )
+
+    [167] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 5
+        )
+
+    [168] => Array
+        (
+            [token] => ID
+            [lexema] => r1
+            [valor] => 
+            [lin] => 34
+            [col] => 6
+        )
+
+    [169] => Array
+        (
+            [token] => <>
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 9
+        )
+
+    [170] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 20
+            [lin] => 34
+            [col] => 12
+        )
+
+    [171] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 14
+        )
+
+    [172] => Array
+        (
+            [token] => or
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 16
+        )
+
+    [173] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 19
+        )
+
+    [174] => Array
+        (
+            [token] => ID
+            [lexema] => i1
+            [valor] => 
+            [lin] => 34
+            [col] => 20
+        )
+
+    [175] => Array
+        (
+            [token] => <=
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 23
+        )
+
+    [176] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 30
+            [lin] => 34
+            [col] => 26
+        )
+
+    [177] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 28
+        )
+
+    [178] => Array
+        (
+            [token] => or
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 30
+        )
+
+    [179] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 33
+        )
+
+    [180] => Array
+        (
+            [token] => ID
+            [lexema] => r3
+            [valor] => 
+            [lin] => 34
+            [col] => 34
+        )
+
+    [181] => Array
+        (
+            [token] => >
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 37
+        )
+
+    [182] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 30
+            [lin] => 34
+            [col] => 39
+        )
+
+    [183] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 41
+        )
+
+    [184] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 5
+            [lin] => 34
+            [col] => 42
+        )
+
+    [185] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 43
+        )
+
+    [186] => Array
+        (
+            [token] => or
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 45
+        )
+
+    [187] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 48
+        )
+
+    [188] => Array
+        (
+            [token] => ID
+            [lexema] => i1
+            [valor] => 
+            [lin] => 34
+            [col] => 49
+        )
+
+    [189] => Array
+        (
+            [token] => >=
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 52
+        )
+
+    [190] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 0
+            [lin] => 34
+            [col] => 55
+        )
+
+    [191] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 56
+        )
+
+    [192] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 57
+        )
+
+    [193] => Array
+        (
+            [token] => then
+            [lexema] => 
+            [valor] => 
+            [lin] => 34
+            [col] => 59
+        )
+
+    [194] => Array
+        (
+            [token] => Begin
+            [lexema] => 
+            [valor] => 
+            [lin] => 35
+            [col] => 1
+        )
+
+    [195] => Array
+        (
+            [token] => ID
+            [lexema] => R2
+            [valor] => 
+            [lin] => 36
+            [col] => 1
+        )
+
+    [196] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 36
+            [col] => 4
+        )
+
+    [197] => Array
+        (
+            [token] => ID
+            [lexema] => r3
+            [valor] => 
+            [lin] => 36
+            [col] => 7
+        )
+
+    [198] => Array
+        (
+            [token] => +
+            [lexema] => 
+            [valor] => 
+            [lin] => 36
+            [col] => 10
+        )
+
+    [199] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 1
+            [lin] => 36
+            [col] => 12
+        )
+
+    [200] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 36
+            [col] => 13
+        )
+
+    [201] => Array
+        (
+            [token] => End
+            [lexema] => 
+            [valor] => 
+            [lin] => 37
+            [col] => 1
+        )
+
+    [202] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 37
+            [col] => 5
+        )
+
+    [203] => Array
+        (
+            [token] => All
+            [lexema] => 
+            [valor] => 
+            [lin] => 38
+            [col] => 1
+        )
+
+    [204] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 38
+            [col] => 5
+        )
+
+    [205] => Array
+        (
+            [token] => ID
+            [lexema] => s1
+            [valor] => 
+            [lin] => 38
+            [col] => 6
+        )
+
+    [206] => Array
+        (
+            [token] => ,
+            [lexema] => 
+            [valor] => 
+            [lin] => 38
+            [col] => 8
+        )
+
+    [207] => Array
+        (
+            [token] => ID
+            [lexema] => s2
+            [valor] => 
+            [lin] => 38
+            [col] => 10
+        )
+
+    [208] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 38
+            [col] => 12
+        )
+
+    [209] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 38
+            [col] => 13
+        )
+
+    [210] => Array
+        (
+            [token] => End
+            [lexema] => 
+            [valor] => 
+            [lin] => 40
+            [col] => 1
+        )
+
+    [211] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 40
+            [col] => 4
+        )
+
+    [212] => Array
+        (
+            [token] => End
+            [lexema] => 
+            [valor] => 
+            [lin] => 41
+            [col] => 1
+        )
+
+    [213] => Array
+        (
+            [token] => .
+            [lexema] => 
+            [valor] => 
+            [lin] => 41
+            [col] => 4
+        )
+
+)
