@@ -27,7 +27,7 @@
               $token = null;
             }else{
               //erro             
-              if($linha[$col+1]===' '&&$linha[$col]===':') erro($linhaCont, $col+1);
+              if($linha[$col+1]===' '&&$linha[$col]===':') erro($linhaCont, $col+1, $linha[$col+1]);
             }
           }
           
@@ -52,11 +52,11 @@
               $token = null;
             }else{            
               if((($col+1)<$tamanhoLinha)&&$linha[$col+1]!==' '&&!verifProxVariavel($linha[$col+1])){
-                erro($linhaCont, $col+1);
+                erro($linhaCont, $col+1,$linha[$col+1]);
               }else{            
                 pushTabela('ID',$linhaCont,$colToken,$token,null);
-                $token=null;            
-              }          
+                $token=null;
+              }
             }
           }else{
             
@@ -65,12 +65,13 @@
                 verifGeral($linha[$col+1]);
                 $token.= $linha[++$col];
               }
-              if(!verifAlfabeto($linha[$col+1])||$linha[$col+1]===';'||$linha[$col+1]===')'||verifAritmetico($linha[$col+1])||$token==='.'){
-                
+              if($linha[$col]==='.'&& !verifNumerico($linha[$col+1])) erro($linhaCont, $col+1, $linha[$col+1]);
+
+              if(!verifAlfabeto($linha[$col+1])||$linha[$col+1]===';'||$linha[$col+1]===')'||verifAritmetico($linha[$col+1])||$token==='.'){                
                 pushTabela('NUMERICO',$linhaCont,$colToken,null,$token);
                 $token=null;  
               }else{
-                erro($linhaCont, $col+1);
+                erro($linhaCont,$col+1, $token);
               }
             }
           }        
@@ -161,7 +162,7 @@
 
   function verifGeral(string $c):void
   {
-    if(valida($c)) erro($GLOBALS['linhaCont'], $GLOBALS['col']);
+    if(valida($c)) erro($GLOBALS['linhaCont'], $GLOBALS['col'], $c);
   }
 
   function valida(string $c):bool
@@ -174,9 +175,9 @@
     );
   }
 
-  function erro(int $lin, int $col, string $codigo = '500',string $err = 'TOKEN Invalido'):void
+  function erro(int $lin, int $col,string $tokenInv ,string $codigo = '1',string $err = 'TOKEN Invalido'):void
   {
-    dd('Erro '.$codigo.' na linha '.$lin.':'.$col.' '.$err);
+    dd('Erro '.$codigo.' na linha '.$lin.':'.$col.' '.$err.' '.$tokenInv);
   }
 
   function dd(...$var)

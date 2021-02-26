@@ -4,7 +4,7 @@ Program teste;
     String l1;
     Begin { aqui e um comentario para teste}
        Begin
-          i1 := i2 @+ 10;
+          i1 := i2 + 10.0;
           if (( x == 20) and (y < 10)) then[
              All (l1);
           end;

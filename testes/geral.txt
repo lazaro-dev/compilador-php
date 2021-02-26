@@ -1,5 +1,5 @@
 
-Program teste;
+Programa teste;
 	Integer  i1, i2, i3 ;
 	String s1, s2, s3;
 	Integer i4, i5, i6;
