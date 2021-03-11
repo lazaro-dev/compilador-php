@@ -59,7 +59,7 @@
           $token = null;        
         }
         // dd($token); 
-        
+
         if($token!==null){       
           // if($linhaCont===3) dd($linha, $linhaCont, $col);   
           // if($linhaCont===3) dd(comparaEte($linha[$col]));
@@ -69,7 +69,7 @@
               $token.= $linha[++$col];
             }
             
-            if(verifPalavReser($token)){          
+            if(verifPalavReser($token)){
               pushTabela($token,$linhaCont,$colToken);
               $token = null;
             }else{
