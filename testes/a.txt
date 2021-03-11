@@ -1,5 +1,5 @@
 programa teste;
-real x, y, z;
+real x, y, z@;
 begin
    begin
       i1 := i2 + 10.22222;

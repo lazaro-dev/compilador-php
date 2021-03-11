@@ -33,7 +33,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 3
-            [col] => 1
+            [col] => 2
         )
 
     [4] => Array
@@ -87,7 +87,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 3
-            [col] => 21
+            [col] => 20
         )
 
     [10] => Array
@@ -96,7 +96,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 4
-            [col] => 1
+            [col] => 2
         )
 
     [11] => Array
@@ -105,7 +105,7 @@ Array
             [lexema] => s1
             [valor] => 
             [lin] => 4
-            [col] => 8
+            [col] => 9
         )
 
     [12] => Array
@@ -114,7 +114,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 4
-            [col] => 10
+            [col] => 11
         )
 
     [13] => Array
@@ -123,7 +123,7 @@ Array
             [lexema] => s2
             [valor] => 
             [lin] => 4
-            [col] => 12
+            [col] => 13
         )
 
     [14] => Array
@@ -132,7 +132,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 4
-            [col] => 14
+            [col] => 15
         )
 
     [15] => Array
@@ -141,7 +141,7 @@ Array
             [lexema] => s3
             [valor] => 
             [lin] => 4
-            [col] => 16
+            [col] => 17
         )
 
     [16] => Array
@@ -150,7 +150,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 4
-            [col] => 18
+            [col] => 19
         )
 
     [17] => Array
@@ -159,7 +159,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 5
-            [col] => 1
+            [col] => 2
         )
 
     [18] => Array
@@ -168,7 +168,7 @@ Array
             [lexema] => i4
             [valor] => 
             [lin] => 5
-            [col] => 9
+            [col] => 10
         )
 
     [19] => Array
@@ -177,7 +177,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 5
-            [col] => 11
+            [col] => 12
         )
 
     [20] => Array
@@ -186,7 +186,7 @@ Array
             [lexema] => i5
             [valor] => 
             [lin] => 5
-            [col] => 13
+            [col] => 14
         )
 
     [21] => Array
@@ -195,7 +195,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 5
-            [col] => 15
+            [col] => 16
         )
 
     [22] => Array
@@ -204,7 +204,7 @@ Array
             [lexema] => i6
             [valor] => 
             [lin] => 5
-            [col] => 17
+            [col] => 18
         )
 
     [23] => Array
@@ -213,7 +213,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 5
-            [col] => 19
+            [col] => 20
         )
 
     [24] => Array
@@ -222,7 +222,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 6
-            [col] => 1
+            [col] => 2
         )
 
     [25] => Array
@@ -231,7 +231,7 @@ Array
             [lexema] => r1
             [valor] => 
             [lin] => 6
-            [col] => 6
+            [col] => 7
         )
 
     [26] => Array
@@ -240,7 +240,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 6
-            [col] => 8
+            [col] => 9
         )
 
     [27] => Array
@@ -249,7 +249,7 @@ Array
             [lexema] => r2
             [valor] => 
             [lin] => 6
-            [col] => 10
+            [col] => 11
         )
 
     [28] => Array
@@ -258,7 +258,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 6
-            [col] => 12
+            [col] => 13
         )
 
     [29] => Array
@@ -267,7 +267,7 @@ Array
             [lexema] => r3
             [valor] => 
             [lin] => 6
-            [col] => 14
+            [col] => 15
         )
 
     [30] => Array
@@ -276,7 +276,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 6
-            [col] => 16
+            [col] => 17
         )
 
     [31] => Array
@@ -285,7 +285,7 @@ Array
             [lexema] => r4
             [valor] => 
             [lin] => 6
-            [col] => 18
+            [col] => 19
         )
 
     [32] => Array
@@ -294,7 +294,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 6
-            [col] => 20
+            [col] => 21
         )
 
     [33] => Array
@@ -312,7 +312,7 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 10
-            [col] => 1
+            [col] => 2
         )
 
     [35] => Array
@@ -321,7 +321,7 @@ Array
             [lexema] => I4
             [valor] => 
             [lin] => 12
-            [col] => 1
+            [col] => 3
         )
 
     [36] => Array
@@ -330,88 +330,88 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 12
-            [col] => 4
+            [col] => 6
         )
 
     [37] => Array
         (
             [token] => NUMERICO
             [lexema] => 
-            [valor] => 10
+            [valor] => 1
             [lin] => 12
-            [col] => 7
+            [col] => 9
         )
 
     [38] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 0
+            [lin] => 12
+            [col] => 10
+        )
+
+    [39] => Array
+        (
+            [token] => .
+            [lexema] => 
+            [valor] => 
+            [lin] => 12
+            [col] => 11
+        )
+
+    [40] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 5
+            [lin] => 12
+            [col] => 12
+        )
+
+    [41] => Array
         (
             [token] => ;
             [lexema] => 
             [valor] => 
             [lin] => 12
-            [col] => 9
+            [col] => 13
         )
 
-    [39] => Array
+    [42] => Array
         (
             [token] => ID
             [lexema] => i4
             [valor] => 
             [lin] => 13
-            [col] => 1
-        )
-
-    [40] => Array
-        (
-            [token] => :=
-            [lexema] => 
-            [valor] => 
-            [lin] => 13
-            [col] => 4
-        )
-
-    [41] => Array
-        (
-            [token] => NUMERICO
-            [lexema] => 
-            [valor] => 20
-            [lin] => 13
-            [col] => 7
-        )
-
-    [42] => Array
-        (
-            [token] => ;
-            [lexema] => 
-            [valor] => 
-            [lin] => 13
-            [col] => 9
+            [col] => 3
         )
 
     [43] => Array
         (
-            [token] => ID
-            [lexema] => I2
+            [token] => :=
+            [lexema] => 
             [valor] => 
-            [lin] => 14
-            [col] => 1
+            [lin] => 13
+            [col] => 6
         )
 
     [44] => Array
         (
-            [token] => :=
+            [token] => NUMERICO
             [lexema] => 
-            [valor] => 
-            [lin] => 14
-            [col] => 5
+            [valor] => 2
+            [lin] => 13
+            [col] => 9
         )
 
     [45] => Array
         (
             [token] => NUMERICO
             [lexema] => 
-            [valor] => 30
-            [lin] => 14
-            [col] => 8
+            [valor] => 0
+            [lin] => 13
+            [col] => 10
         )
 
     [46] => Array
@@ -419,17 +419,17 @@ Array
             [token] => ;
             [lexema] => 
             [valor] => 
-            [lin] => 14
-            [col] => 10
+            [lin] => 13
+            [col] => 11
         )
 
     [47] => Array
         (
             [token] => ID
-            [lexema] => R1
+            [lexema] => I2
             [valor] => 
-            [lin] => 15
-            [col] => 1
+            [lin] => 14
+            [col] => 3
         )
 
     [48] => Array
@@ -437,278 +437,278 @@ Array
             [token] => :=
             [lexema] => 
             [valor] => 
-            [lin] => 15
-            [col] => 4
+            [lin] => 14
+            [col] => 7
         )
 
     [49] => Array
         (
             [token] => NUMERICO
             [lexema] => 
-            [valor] => 1
-            [lin] => 15
-            [col] => 7
+            [valor] => 3
+            [lin] => 14
+            [col] => 10
         )
 
     [50] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 0
+            [lin] => 14
+            [col] => 11
+        )
+
+    [51] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 14
+            [col] => 12
+        )
+
+    [52] => Array
+        (
+            [token] => ID
+            [lexema] => R1
+            [valor] => 
+            [lin] => 15
+            [col] => 3
+        )
+
+    [53] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 15
+            [col] => 6
+        )
+
+    [54] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 1
+            [lin] => 15
+            [col] => 9
+        )
+
+    [55] => Array
         (
             [token] => ,
             [lexema] => 
             [valor] => 
             [lin] => 15
-            [col] => 8
+            [col] => 10
         )
 
-    [51] => Array
+    [56] => Array
         (
             [token] => NUMERICO
             [lexema] => 
             [valor] => 5
             [lin] => 15
-            [col] => 9
+            [col] => 11
         )
 
-    [52] => Array
+    [57] => Array
         (
             [token] => ;
             [lexema] => 
             [valor] => 
             [lin] => 15
-            [col] => 10
+            [col] => 12
         )
 
-    [53] => Array
+    [58] => Array
         (
             [token] => ID
             [lexema] => I5
             [valor] => 
             [lin] => 16
-            [col] => 1
+            [col] => 3
         )
 
-    [54] => Array
+    [59] => Array
         (
             [token] => :=
             [lexema] => 
             [valor] => 
             [lin] => 16
-            [col] => 4
+            [col] => 6
         )
 
-    [55] => Array
+    [60] => Array
         (
             [token] => ID
             [lexema] => i4
             [valor] => 
             [lin] => 16
-            [col] => 7
-        )
-
-    [56] => Array
-        (
-            [token] => ;
-            [lexema] => 
-            [valor] => 
-            [lin] => 16
-            [col] => 9
-        )
-
-    [57] => Array
-        (
-            [token] => ID
-            [lexema] => R2
-            [valor] => 
-            [lin] => 17
-            [col] => 1
-        )
-
-    [58] => Array
-        (
-            [token] => :=
-            [lexema] => 
-            [valor] => 
-            [lin] => 17
-            [col] => 4
-        )
-
-    [59] => Array
-        (
-            [token] => ID
-            [lexema] => r1
-            [valor] => 
-            [lin] => 17
-            [col] => 7
-        )
-
-    [60] => Array
-        (
-            [token] => ;
-            [lexema] => 
-            [valor] => 
-            [lin] => 17
             [col] => 9
         )
 
     [61] => Array
         (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 16
+            [col] => 11
+        )
+
+    [62] => Array
+        (
+            [token] => ID
+            [lexema] => R2
+            [valor] => 
+            [lin] => 17
+            [col] => 3
+        )
+
+    [63] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 17
+            [col] => 6
+        )
+
+    [64] => Array
+        (
+            [token] => ID
+            [lexema] => r1
+            [valor] => 
+            [lin] => 17
+            [col] => 9
+        )
+
+    [65] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 17
+            [col] => 11
+        )
+
+    [66] => Array
+        (
             [token] => ID
             [lexema] => R3
             [valor] => 
             [lin] => 18
-            [col] => 1
+            [col] => 3
         )
 
-    [62] => Array
+    [67] => Array
         (
             [token] => :=
             [lexema] => 
             [valor] => 
             [lin] => 18
-            [col] => 4
+            [col] => 6
         )
 
-    [63] => Array
+    [68] => Array
         (
             [token] => ID
             [lexema] => i1
             [valor] => 
             [lin] => 18
-            [col] => 7
+            [col] => 9
         )
 
-    [64] => Array
+    [69] => Array
         (
             [token] => +
             [lexema] => 
-            [valor] => 
-            [lin] => 18
-            [col] => 10
-        )
-
-    [65] => Array
-        (
-            [token] => ID
-            [lexema] => r1
             [valor] => 
             [lin] => 18
             [col] => 12
         )
 
-    [66] => Array
+    [70] => Array
         (
-            [token] => ;
-            [lexema] => 
+            [token] => ID
+            [lexema] => r1
             [valor] => 
             [lin] => 18
             [col] => 14
         )
 
-    [67] => Array
+    [71] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 18
+            [col] => 16
+        )
+
+    [72] => Array
         (
             [token] => ID
             [lexema] => R4
             [valor] => 
             [lin] => 19
-            [col] => 1
+            [col] => 3
         )
 
-    [68] => Array
+    [73] => Array
         (
             [token] => :=
             [lexema] => 
             [valor] => 
             [lin] => 19
-            [col] => 4
+            [col] => 6
         )
 
-    [69] => Array
+    [74] => Array
         (
             [token] => (
             [lexema] => 
             [valor] => 
             [lin] => 19
-            [col] => 7
+            [col] => 9
         )
 
-    [70] => Array
+    [75] => Array
         (
             [token] => ID
             [lexema] => i1
             [valor] => 
             [lin] => 19
-            [col] => 8
+            [col] => 10
         )
 
-    [71] => Array
+    [76] => Array
         (
             [token] => /
             [lexema] => 
             [valor] => 
             [lin] => 19
-            [col] => 11
-        )
-
-    [72] => Array
-        (
-            [token] => NUMERICO
-            [lexema] => 
-            [valor] => 10
-            [lin] => 19
             [col] => 13
-        )
-
-    [73] => Array
-        (
-            [token] => )
-            [lexema] => 
-            [valor] => 
-            [lin] => 19
-            [col] => 15
-        )
-
-    [74] => Array
-        (
-            [token] => *
-            [lexema] => 
-            [valor] => 
-            [lin] => 19
-            [col] => 17
-        )
-
-    [75] => Array
-        (
-            [token] => (
-            [lexema] => 
-            [valor] => 
-            [lin] => 19
-            [col] => 19
-        )
-
-    [76] => Array
-        (
-            [token] => ID
-            [lexema] => r1
-            [valor] => 
-            [lin] => 19
-            [col] => 20
         )
 
     [77] => Array
         (
-            [token] => +
+            [token] => NUMERICO
             [lexema] => 
-            [valor] => 
+            [valor] => 1
             [lin] => 19
-            [col] => 23
+            [col] => 15
         )
 
     [78] => Array
         (
-            [token] => ID
-            [lexema] => i2
-            [valor] => 
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 0
             [lin] => 19
-            [col] => 25
+            [col] => 16
         )
 
     [79] => Array
@@ -717,52 +717,52 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 19
-            [col] => 27
+            [col] => 17
         )
 
     [80] => Array
         (
-            [token] => ;
+            [token] => *
             [lexema] => 
             [valor] => 
             [lin] => 19
-            [col] => 28
+            [col] => 19
         )
 
     [81] => Array
         (
-            [token] => ID
-            [lexema] => R4
+            [token] => (
+            [lexema] => 
             [valor] => 
-            [lin] => 20
-            [col] => 1
+            [lin] => 19
+            [col] => 21
         )
 
     [82] => Array
         (
-            [token] => :=
-            [lexema] => 
+            [token] => ID
+            [lexema] => r1
             [valor] => 
-            [lin] => 20
-            [col] => 4
+            [lin] => 19
+            [col] => 22
         )
 
     [83] => Array
         (
-            [token] => (
+            [token] => +
             [lexema] => 
             [valor] => 
-            [lin] => 20
-            [col] => 7
+            [lin] => 19
+            [col] => 25
         )
 
     [84] => Array
         (
             [token] => ID
-            [lexema] => r4
+            [lexema] => i2
             [valor] => 
-            [lin] => 20
-            [col] => 8
+            [lin] => 19
+            [col] => 27
         )
 
     [85] => Array
@@ -770,29 +770,74 @@ Array
             [token] => )
             [lexema] => 
             [valor] => 
-            [lin] => 20
-            [col] => 10
+            [lin] => 19
+            [col] => 29
         )
 
     [86] => Array
         (
-            [token] => +
+            [token] => ;
             [lexema] => 
             [valor] => 
-            [lin] => 20
-            [col] => 12
+            [lin] => 19
+            [col] => 30
         )
 
     [87] => Array
+        (
+            [token] => ID
+            [lexema] => R4
+            [valor] => 
+            [lin] => 20
+            [col] => 2
+        )
+
+    [88] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 5
+        )
+
+    [89] => Array
         (
             [token] => (
             [lexema] => 
             [valor] => 
             [lin] => 20
-            [col] => 14
+            [col] => 8
         )
 
-    [88] => Array
+    [90] => Array
+        (
+            [token] => ID
+            [lexema] => r4
+            [valor] => 
+            [lin] => 20
+            [col] => 9
+        )
+
+    [91] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 11
+        )
+
+    [92] => Array
+        (
+            [token] => +
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 13
+        )
+
+    [93] => Array
         (
             [token] => (
             [lexema] => 
@@ -801,112 +846,67 @@ Array
             [col] => 15
         )
 
-    [89] => Array
-        (
-            [token] => ID
-            [lexema] => i1
-            [valor] => 
-            [lin] => 20
-            [col] => 16
-        )
-
-    [90] => Array
-        (
-            [token] => /
-            [lexema] => 
-            [valor] => 
-            [lin] => 20
-            [col] => 19
-        )
-
-    [91] => Array
-        (
-            [token] => NUMERICO
-            [lexema] => 
-            [valor] => 15
-            [lin] => 20
-            [col] => 21
-        )
-
-    [92] => Array
-        (
-            [token] => ,
-            [lexema] => 
-            [valor] => 
-            [lin] => 20
-            [col] => 23
-        )
-
-    [93] => Array
-        (
-            [token] => NUMERICO
-            [lexema] => 
-            [valor] => 2
-            [lin] => 20
-            [col] => 24
-        )
-
     [94] => Array
-        (
-            [token] => )
-            [lexema] => 
-            [valor] => 
-            [lin] => 20
-            [col] => 25
-        )
-
-    [95] => Array
-        (
-            [token] => *
-            [lexema] => 
-            [valor] => 
-            [lin] => 20
-            [col] => 27
-        )
-
-    [96] => Array
         (
             [token] => (
             [lexema] => 
             [valor] => 
             [lin] => 20
-            [col] => 29
+            [col] => 16
+        )
+
+    [95] => Array
+        (
+            [token] => ID
+            [lexema] => i1
+            [valor] => 
+            [lin] => 20
+            [col] => 17
+        )
+
+    [96] => Array
+        (
+            [token] => /
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 20
         )
 
     [97] => Array
         (
-            [token] => ID
-            [lexema] => r1
-            [valor] => 
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 1
             [lin] => 20
-            [col] => 30
+            [col] => 22
         )
 
     [98] => Array
         (
-            [token] => +
+            [token] => NUMERICO
             [lexema] => 
-            [valor] => 
+            [valor] => 5
             [lin] => 20
-            [col] => 33
+            [col] => 23
         )
 
     [99] => Array
         (
-            [token] => ID
-            [lexema] => i2
+            [token] => ,
+            [lexema] => 
             [valor] => 
             [lin] => 20
-            [col] => 35
+            [col] => 24
         )
 
     [100] => Array
         (
-            [token] => )
+            [token] => NUMERICO
             [lexema] => 
-            [valor] => 
+            [valor] => 2
             [lin] => 20
-            [col] => 37
+            [col] => 25
         )
 
     [101] => Array
@@ -915,19 +915,82 @@ Array
             [lexema] => 
             [valor] => 
             [lin] => 20
-            [col] => 38
+            [col] => 26
         )
 
     [102] => Array
         (
-            [token] => ;
+            [token] => *
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 28
+        )
+
+    [103] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 30
+        )
+
+    [104] => Array
+        (
+            [token] => ID
+            [lexema] => r1
+            [valor] => 
+            [lin] => 20
+            [col] => 31
+        )
+
+    [105] => Array
+        (
+            [token] => +
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 34
+        )
+
+    [106] => Array
+        (
+            [token] => ID
+            [lexema] => i2
+            [valor] => 
+            [lin] => 20
+            [col] => 36
+        )
+
+    [107] => Array
+        (
+            [token] => )
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 38
+        )
+
+    [108] => Array
+        (
+            [token] => )
             [lexema] => 
             [valor] => 
             [lin] => 20
             [col] => 39
         )
 
-    [103] => Array
+    [109] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 20
+            [col] => 40
+        )
+
+    [110] => Array
         (
             [token] => if
             [lexema] => 
@@ -936,7 +999,7 @@ Array
             [col] => 1
         )
 
-    [104] => Array
+    [111] => Array
         (
             [token] => (
             [lexema] => 
@@ -945,7 +1008,7 @@ Array
             [col] => 4
         )
 
-    [105] => Array
+    [112] => Array
         (
             [token] => NUMERICO
             [lexema] => 
@@ -954,7 +1017,7 @@ Array
             [col] => 5
         )
 
-    [106] => Array
+    [113] => Array
         (
             [token] => >
             [lexema] => 
@@ -963,7 +1026,7 @@ Array
             [col] => 7
         )
 
-    [107] => Array
+    [114] => Array
         (
             [token] => ID
             [lexema] => r2
@@ -972,7 +1035,7 @@ Array
             [col] => 9
         )
 
-    [108] => Array
+    [115] => Array
         (
             [token] => )
             [lexema] => 
@@ -981,7 +1044,7 @@ Array
             [col] => 11
         )
 
-    [109] => Array
+    [116] => Array
         (
             [token] => then
             [lexema] => 
@@ -990,70 +1053,70 @@ Array
             [col] => 13
         )
 
-    [110] => Array
+    [117] => Array
         (
             [token] => All
             [lexema] => 
             [valor] => 
             [lin] => 22
-            [col] => 1
+            [col] => 2
         )
 
-    [111] => Array
+    [118] => Array
         (
             [token] => (
             [lexema] => 
             [valor] => 
             [lin] => 22
-            [col] => 5
+            [col] => 6
         )
 
-    [112] => Array
+    [119] => Array
         (
             [token] => ID
             [lexema] => s1
             [valor] => 
             [lin] => 22
-            [col] => 6
+            [col] => 7
         )
 
-    [113] => Array
+    [120] => Array
         (
             [token] => ,
             [lexema] => 
             [valor] => 
             [lin] => 22
-            [col] => 8
+            [col] => 9
         )
 
-    [114] => Array
+    [121] => Array
         (
             [token] => ID
             [lexema] => s2
             [valor] => 
             [lin] => 22
-            [col] => 10
+            [col] => 11
         )
 
-    [115] => Array
+    [122] => Array
         (
             [token] => )
-            [lexema] => 
-            [valor] => 
-            [lin] => 22
-            [col] => 12
-        )
-
-    [116] => Array
-        (
-            [token] => ;
             [lexema] => 
             [valor] => 
             [lin] => 22
             [col] => 13
         )
 
-    [117] => Array
+    [123] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 22
+            [col] => 14
+        )
+
+    [124] => Array
         (
             [token] => else
             [lexema] => 
@@ -1062,7 +1125,7 @@ Array
             [col] => 1
         )
 
-    [118] => Array
+    [125] => Array
         (
             [token] => Begin
             [lexema] => 
@@ -1071,85 +1134,22 @@ Array
             [col] => 1
         )
 
-    [119] => Array
+    [126] => Array
         (
             [token] => while
             [lexema] => 
             [valor] => 
             [lin] => 25
-            [col] => 1
+            [col] => 2
         )
 
-    [120] => Array
+    [127] => Array
         (
             [token] => (
             [lexema] => 
             [valor] => 
             [lin] => 25
-            [col] => 7
-        )
-
-    [121] => Array
-        (
-            [token] => ID
-            [lexema] => r2
-            [valor] => 
-            [lin] => 25
             [col] => 8
-        )
-
-    [122] => Array
-        (
-            [token] => <
-            [lexema] => 
-            [valor] => 
-            [lin] => 25
-            [col] => 11
-        )
-
-    [123] => Array
-        (
-            [token] => NUMERICO
-            [lexema] => 
-            [valor] => 100
-            [lin] => 25
-            [col] => 13
-        )
-
-    [124] => Array
-        (
-            [token] => )
-            [lexema] => 
-            [valor] => 
-            [lin] => 25
-            [col] => 16
-        )
-
-    [125] => Array
-        (
-            [token] => do
-            [lexema] => 
-            [valor] => 
-            [lin] => 25
-            [col] => 18
-        )
-
-    [126] => Array
-        (
-            [token] => ID
-            [lexema] => R2
-            [valor] => 
-            [lin] => 26
-            [col] => 1
-        )
-
-    [127] => Array
-        (
-            [token] => :=
-            [lexema] => 
-            [valor] => 
-            [lin] => 26
-            [col] => 4
         )
 
     [128] => Array
@@ -1157,17 +1157,17 @@ Array
             [token] => ID
             [lexema] => r2
             [valor] => 
-            [lin] => 26
-            [col] => 7
+            [lin] => 25
+            [col] => 9
         )
 
     [129] => Array
         (
-            [token] => +
+            [token] => <
             [lexema] => 
             [valor] => 
-            [lin] => 26
-            [col] => 10
+            [lin] => 25
+            [col] => 12
         )
 
     [130] => Array
@@ -1175,205 +1175,205 @@ Array
             [token] => NUMERICO
             [lexema] => 
             [valor] => 1
-            [lin] => 26
-            [col] => 12
+            [lin] => 25
+            [col] => 14
         )
 
     [131] => Array
         (
-            [token] => ;
+            [token] => NUMERICO
             [lexema] => 
-            [valor] => 
-            [lin] => 26
-            [col] => 13
+            [valor] => 0
+            [lin] => 25
+            [col] => 15
         )
 
     [132] => Array
         (
-            [token] => repeat
+            [token] => NUMERICO
             [lexema] => 
-            [valor] => 
-            [lin] => 27
-            [col] => 1
+            [valor] => 0
+            [lin] => 25
+            [col] => 16
         )
 
     [133] => Array
         (
-            [token] => Begin
+            [token] => )
             [lexema] => 
             [valor] => 
-            [lin] => 28
-            [col] => 1
+            [lin] => 25
+            [col] => 17
         )
 
     [134] => Array
         (
-            [token] => ID
-            [lexema] => R2
+            [token] => do
+            [lexema] => 
             [valor] => 
-            [lin] => 29
-            [col] => 1
+            [lin] => 25
+            [col] => 19
         )
 
     [135] => Array
         (
-            [token] => :=
-            [lexema] => 
+            [token] => ID
+            [lexema] => R2
             [valor] => 
-            [lin] => 29
-            [col] => 4
+            [lin] => 26
+            [col] => 3
         )
 
     [136] => Array
         (
-            [token] => ID
-            [lexema] => r2
+            [token] => :=
+            [lexema] => 
             [valor] => 
-            [lin] => 29
-            [col] => 7
+            [lin] => 26
+            [col] => 6
         )
 
     [137] => Array
         (
-            [token] => +
-            [lexema] => 
+            [token] => ID
+            [lexema] => r2
             [valor] => 
-            [lin] => 29
-            [col] => 10
+            [lin] => 26
+            [col] => 9
         )
 
     [138] => Array
         (
-            [token] => NUMERICO
+            [token] => +
             [lexema] => 
-            [valor] => 2
-            [lin] => 29
+            [valor] => 
+            [lin] => 26
             [col] => 12
         )
 
     [139] => Array
         (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 1
+            [lin] => 26
+            [col] => 14
+        )
+
+    [140] => Array
+        (
             [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 26
+            [col] => 15
+        )
+
+    [141] => Array
+        (
+            [token] => repeat
+            [lexema] => 
+            [valor] => 
+            [lin] => 27
+            [col] => 3
+        )
+
+    [142] => Array
+        (
+            [token] => Begin
+            [lexema] => 
+            [valor] => 
+            [lin] => 28
+            [col] => 3
+        )
+
+    [143] => Array
+        (
+            [token] => ID
+            [lexema] => R2
+            [valor] => 
+            [lin] => 29
+            [col] => 4
+        )
+
+    [144] => Array
+        (
+            [token] => :=
+            [lexema] => 
+            [valor] => 
+            [lin] => 29
+            [col] => 7
+        )
+
+    [145] => Array
+        (
+            [token] => ID
+            [lexema] => r2
+            [valor] => 
+            [lin] => 29
+            [col] => 10
+        )
+
+    [146] => Array
+        (
+            [token] => +
             [lexema] => 
             [valor] => 
             [lin] => 29
             [col] => 13
         )
 
-    [140] => Array
+    [147] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 2
+            [lin] => 29
+            [col] => 15
+        )
+
+    [148] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 29
+            [col] => 16
+        )
+
+    [149] => Array
         (
             [token] => ID
             [lexema] => R3
             [valor] => 
             [lin] => 30
-            [col] => 1
+            [col] => 4
         )
 
-    [141] => Array
+    [150] => Array
         (
             [token] => :=
             [lexema] => 
             [valor] => 
             [lin] => 30
-            [col] => 4
-        )
-
-    [142] => Array
-        (
-            [token] => ID
-            [lexema] => r3
-            [valor] => 
-            [lin] => 30
             [col] => 7
-        )
-
-    [143] => Array
-        (
-            [token] => +
-            [lexema] => 
-            [valor] => 
-            [lin] => 30
-            [col] => 10
-        )
-
-    [144] => Array
-        (
-            [token] => NUMERICO
-            [lexema] => 
-            [valor] => 3
-            [lin] => 30
-            [col] => 12
-        )
-
-    [145] => Array
-        (
-            [token] => ;
-            [lexema] => 
-            [valor] => 
-            [lin] => 30
-            [col] => 13
-        )
-
-    [146] => Array
-        (
-            [token] => End
-            [lexema] => 
-            [valor] => 
-            [lin] => 31
-            [col] => 1
-        )
-
-    [147] => Array
-        (
-            [token] => ;
-            [lexema] => 
-            [valor] => 
-            [lin] => 31
-            [col] => 5
-        )
-
-    [148] => Array
-        (
-            [token] => until
-            [lexema] => 
-            [valor] => 
-            [lin] => 32
-            [col] => 1
-        )
-
-    [149] => Array
-        (
-            [token] => (
-            [lexema] => 
-            [valor] => 
-            [lin] => 32
-            [col] => 7
-        )
-
-    [150] => Array
-        (
-            [token] => (
-            [lexema] => 
-            [valor] => 
-            [lin] => 32
-            [col] => 9
         )
 
     [151] => Array
         (
             [token] => ID
-            [lexema] => r1
+            [lexema] => r3
             [valor] => 
-            [lin] => 32
+            [lin] => 30
             [col] => 10
         )
 
     [152] => Array
         (
-            [token] => =
+            [token] => +
             [lexema] => 
             [valor] => 
-            [lin] => 32
+            [lin] => 30
             [col] => 13
         )
 
@@ -1381,75 +1381,165 @@ Array
         (
             [token] => NUMERICO
             [lexema] => 
-            [valor] => 20
-            [lin] => 32
+            [valor] => 3
+            [lin] => 30
             [col] => 15
         )
 
     [154] => Array
         (
-            [token] => )
+            [token] => ;
             [lexema] => 
             [valor] => 
-            [lin] => 32
-            [col] => 17
+            [lin] => 30
+            [col] => 16
         )
 
     [155] => Array
         (
-            [token] => or
+            [token] => End
             [lexema] => 
             [valor] => 
-            [lin] => 32
-            [col] => 19
+            [lin] => 31
+            [col] => 3
         )
 
     [156] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 31
+            [col] => 7
+        )
+
+    [157] => Array
+        (
+            [token] => until
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 2
+        )
+
+    [158] => Array
         (
             [token] => (
             [lexema] => 
             [valor] => 
             [lin] => 32
-            [col] => 22
-        )
-
-    [157] => Array
-        (
-            [token] => ID
-            [lexema] => r3
-            [valor] => 
-            [lin] => 32
-            [col] => 23
-        )
-
-    [158] => Array
-        (
-            [token] => <
-            [lexema] => 
-            [valor] => 
-            [lin] => 32
-            [col] => 26
+            [col] => 8
         )
 
     [159] => Array
         (
-            [token] => NUMERICO
+            [token] => (
             [lexema] => 
-            [valor] => 30
+            [valor] => 
             [lin] => 32
-            [col] => 28
+            [col] => 10
         )
 
     [160] => Array
+        (
+            [token] => ID
+            [lexema] => r1
+            [valor] => 
+            [lin] => 32
+            [col] => 11
+        )
+
+    [161] => Array
+        (
+            [token] => =
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 14
+        )
+
+    [162] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 2
+            [lin] => 32
+            [col] => 16
+        )
+
+    [163] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 0
+            [lin] => 32
+            [col] => 17
+        )
+
+    [164] => Array
         (
             [token] => )
             [lexema] => 
             [valor] => 
             [lin] => 32
+            [col] => 18
+        )
+
+    [165] => Array
+        (
+            [token] => or
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 20
+        )
+
+    [166] => Array
+        (
+            [token] => (
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 23
+        )
+
+    [167] => Array
+        (
+            [token] => ID
+            [lexema] => r3
+            [valor] => 
+            [lin] => 32
+            [col] => 24
+        )
+
+    [168] => Array
+        (
+            [token] => <
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 27
+        )
+
+    [169] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 3
+            [lin] => 32
+            [col] => 29
+        )
+
+    [170] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 0
+            [lin] => 32
             [col] => 30
         )
 
-    [161] => Array
+    [171] => Array
         (
             [token] => )
             [lexema] => 
@@ -1458,16 +1548,25 @@ Array
             [col] => 31
         )
 
-    [162] => Array
+    [172] => Array
         (
-            [token] => ;
+            [token] => )
             [lexema] => 
             [valor] => 
             [lin] => 32
             [col] => 32
         )
 
-    [163] => Array
+    [173] => Array
+        (
+            [token] => ;
+            [lexema] => 
+            [valor] => 
+            [lin] => 32
+            [col] => 33
+        )
+
+    [174] => Array
         (
             [token] => End
             [lexema] => 
@@ -1476,7 +1575,7 @@ Array
             [col] => 1
         )
 
-    [164] => Array
+    [175] => Array
         (
             [token] => ;
             [lexema] => 
@@ -1485,7 +1584,7 @@ Array
             [col] => 5
         )
 
-    [165] => Array
+    [176] => Array
         (
             [token] => If
             [lexema] => 
@@ -1494,7 +1593,7 @@ Array
             [col] => 1
         )
 
-    [166] => Array
+    [177] => Array
         (
             [token] => (
             [lexema] => 
@@ -1503,7 +1602,7 @@ Array
             [col] => 4
         )
 
-    [167] => Array
+    [178] => Array
         (
             [token] => (
             [lexema] => 
@@ -1512,7 +1611,7 @@ Array
             [col] => 5
         )
 
-    [168] => Array
+    [179] => Array
         (
             [token] => ID
             [lexema] => r1
@@ -1521,7 +1620,7 @@ Array
             [col] => 6
         )
 
-    [169] => Array
+    [180] => Array
         (
             [token] => <>
             [lexema] => 
@@ -1530,16 +1629,25 @@ Array
             [col] => 9
         )
 
-    [170] => Array
+    [181] => Array
         (
             [token] => NUMERICO
             [lexema] => 
-            [valor] => 20
+            [valor] => 2
             [lin] => 34
             [col] => 12
         )
 
-    [171] => Array
+    [182] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 0
+            [lin] => 34
+            [col] => 13
+        )
+
+    [183] => Array
         (
             [token] => )
             [lexema] => 
@@ -1548,7 +1656,7 @@ Array
             [col] => 14
         )
 
-    [172] => Array
+    [184] => Array
         (
             [token] => or
             [lexema] => 
@@ -1557,7 +1665,7 @@ Array
             [col] => 16
         )
 
-    [173] => Array
+    [185] => Array
         (
             [token] => (
             [lexema] => 
@@ -1566,7 +1674,7 @@ Array
             [col] => 19
         )
 
-    [174] => Array
+    [186] => Array
         (
             [token] => ID
             [lexema] => i1
@@ -1575,7 +1683,7 @@ Array
             [col] => 20
         )
 
-    [175] => Array
+    [187] => Array
         (
             [token] => <=
             [lexema] => 
@@ -1584,16 +1692,25 @@ Array
             [col] => 23
         )
 
-    [176] => Array
+    [188] => Array
         (
             [token] => NUMERICO
             [lexema] => 
-            [valor] => 30
+            [valor] => 3
             [lin] => 34
             [col] => 26
         )
 
-    [177] => Array
+    [189] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 0
+            [lin] => 34
+            [col] => 27
+        )
+
+    [190] => Array
         (
             [token] => )
             [lexema] => 
@@ -1602,7 +1719,7 @@ Array
             [col] => 28
         )
 
-    [178] => Array
+    [191] => Array
         (
             [token] => or
             [lexema] => 
@@ -1611,7 +1728,7 @@ Array
             [col] => 30
         )
 
-    [179] => Array
+    [192] => Array
         (
             [token] => (
             [lexema] => 
@@ -1620,7 +1737,7 @@ Array
             [col] => 33
         )
 
-    [180] => Array
+    [193] => Array
         (
             [token] => ID
             [lexema] => r3
@@ -1629,7 +1746,7 @@ Array
             [col] => 34
         )
 
-    [181] => Array
+    [194] => Array
         (
             [token] => >
             [lexema] => 
@@ -1638,16 +1755,25 @@ Array
             [col] => 37
         )
 
-    [182] => Array
+    [195] => Array
         (
             [token] => NUMERICO
             [lexema] => 
-            [valor] => 30
+            [valor] => 3
             [lin] => 34
             [col] => 39
         )
 
-    [183] => Array
+    [196] => Array
+        (
+            [token] => NUMERICO
+            [lexema] => 
+            [valor] => 0
+            [lin] => 34
+            [col] => 40
+        )
+
+    [197] => Array
         (
             [token] => ,
             [lexema] => 
@@ -1656,7 +1782,7 @@ Array
             [col] => 41
         )
 
-    [184] => Array
+    [198] => Array
         (
             [token] => NUMERICO
             [lexema] => 
@@ -1665,7 +1791,7 @@ Array
             [col] => 42
         )
 
-    [185] => Array
+    [199] => Array
         (
             [token] => )
             [lexema] => 
@@ -1674,7 +1800,7 @@ Array
             [col] => 43
         )
 
-    [186] => Array
+    [200] => Array
         (
             [token] => or
             [lexema] => 
@@ -1683,7 +1809,7 @@ Array
             [col] => 45
         )
 
-    [187] => Array
+    [201] => Array
         (
             [token] => (
             [lexema] => 
@@ -1692,7 +1818,7 @@ Array
             [col] => 48
         )
 
-    [188] => Array
+    [202] => Array
         (
             [token] => ID
             [lexema] => i1
@@ -1701,7 +1827,7 @@ Array
             [col] => 49
         )
 
-    [189] => Array
+    [203] => Array
         (
             [token] => >=
             [lexema] => 
@@ -1710,7 +1836,7 @@ Array
             [col] => 52
         )
 
-    [190] => Array
+    [204] => Array
         (
             [token] => NUMERICO
             [lexema] => 
@@ -1719,7 +1845,7 @@ Array
             [col] => 55
         )
 
-    [191] => Array
+    [205] => Array
         (
             [token] => )
             [lexema] => 
@@ -1728,7 +1854,7 @@ Array
             [col] => 56
         )
 
-    [192] => Array
+    [206] => Array
         (
             [token] => )
             [lexema] => 
@@ -1737,7 +1863,7 @@ Array
             [col] => 57
         )
 
-    [193] => Array
+    [207] => Array
         (
             [token] => then
             [lexema] => 
@@ -1746,88 +1872,88 @@ Array
             [col] => 59
         )
 
-    [194] => Array
+    [208] => Array
         (
             [token] => Begin
             [lexema] => 
             [valor] => 
             [lin] => 35
-            [col] => 1
+            [col] => 2
         )
 
-    [195] => Array
+    [209] => Array
         (
             [token] => ID
             [lexema] => R2
             [valor] => 
             [lin] => 36
-            [col] => 1
+            [col] => 3
         )
 
-    [196] => Array
+    [210] => Array
         (
             [token] => :=
             [lexema] => 
             [valor] => 
             [lin] => 36
-            [col] => 4
+            [col] => 6
         )
 
-    [197] => Array
+    [211] => Array
         (
             [token] => ID
             [lexema] => r3
             [valor] => 
             [lin] => 36
-            [col] => 7
+            [col] => 9
         )
 
-    [198] => Array
+    [212] => Array
         (
             [token] => +
             [lexema] => 
             [valor] => 
             [lin] => 36
-            [col] => 10
+            [col] => 12
         )
 
-    [199] => Array
+    [213] => Array
         (
             [token] => NUMERICO
             [lexema] => 
             [valor] => 1
             [lin] => 36
-            [col] => 12
+            [col] => 14
         )
 
-    [200] => Array
+    [214] => Array
         (
             [token] => ;
             [lexema] => 
             [valor] => 
             [lin] => 36
-            [col] => 13
+            [col] => 15
         )
 
-    [201] => Array
+    [215] => Array
         (
             [token] => End
             [lexema] => 
             [valor] => 
             [lin] => 37
-            [col] => 1
+            [col] => 2
         )
 
-    [202] => Array
+    [216] => Array
         (
             [token] => ;
             [lexema] => 
             [valor] => 
             [lin] => 37
-            [col] => 5
+            [col] => 6
         )
 
-    [203] => Array
+    [217] => Array
         (
             [token] => All
             [lexema] => 
@@ -1836,7 +1962,7 @@ Array
             [col] => 1
         )
 
-    [204] => Array
+    [218] => Array
         (
             [token] => (
             [lexema] => 
@@ -1845,7 +1971,7 @@ Array
             [col] => 5
         )
 
-    [205] => Array
+    [219] => Array
         (
             [token] => ID
             [lexema] => s1
@@ -1854,7 +1980,7 @@ Array
             [col] => 6
         )
 
-    [206] => Array
+    [220] => Array
         (
             [token] => ,
             [lexema] => 
@@ -1863,7 +1989,7 @@ Array
             [col] => 8
         )
 
-    [207] => Array
+    [221] => Array
         (
             [token] => ID
             [lexema] => s2
@@ -1872,7 +1998,7 @@ Array
             [col] => 10
         )
 
-    [208] => Array
+    [222] => Array
         (
             [token] => )
             [lexema] => 
@@ -1881,7 +2007,7 @@ Array
             [col] => 12
         )
 
-    [209] => Array
+    [223] => Array
         (
             [token] => ;
             [lexema] => 
@@ -1890,7 +2016,7 @@ Array
             [col] => 13
         )
 
-    [210] => Array
+    [224] => Array
         (
             [token] => End
             [lexema] => 
@@ -1899,7 +2025,7 @@ Array
             [col] => 1
         )
 
-    [211] => Array
+    [225] => Array
         (
             [token] => ;
             [lexema] => 
@@ -1908,7 +2034,7 @@ Array
             [col] => 4
         )
 
-    [212] => Array
+    [226] => Array
         (
             [token] => End
             [lexema] => 
@@ -1917,7 +2043,7 @@ Array
             [col] => 1
         )
 
-    [213] => Array
+    [227] => Array
         (
             [token] => .
             [lexema] => 
