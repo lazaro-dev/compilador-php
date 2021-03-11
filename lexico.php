@@ -59,6 +59,7 @@
           $token = null;        
         }
         // dd($token); 
+        
         if($token!==null){       
           // if($linhaCont===3) dd($linha, $linhaCont, $col);   
           // if($linhaCont===3) dd(comparaEte($linha[$col]));
