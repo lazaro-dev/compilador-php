@@ -105,7 +105,7 @@
   }
   
   fclose($file);
-  gravar($tabela);
+  gravar2($tabela);
   dd($tabela);
 
   function verifProxVariavel(string $c){
@@ -122,16 +122,6 @@
     );
   }
 
-  function pushTabela(string $token, int $lin, int $col, string $lexema=null,  string $valor=null):void
-  {    
-    array_push($GLOBALS['tabela'], [
-      'token' => $token,
-      'lexema' => $lexema,      
-      'valor' => $valor, 
-      'lin' => $lin,
-      'col' => ($col + 1)
-    ]);
-  }
   function proxCarac(string $c):bool
   {
     $regra = '/^(<|>|:|\.)$/';
@@ -216,6 +206,17 @@
     dd('Erro '.$codigo.' na linha '.$lin.':'.$col.' '.$err.' '.$tokenInv);
   }
 
+  function pushTabela(string $token, int $lin, int $col, string $lexema=null,  string $valor=null):void
+  {    
+    array_push($GLOBALS['tabela'], [
+      'token' => $token,
+      'lexema' => $lexema,      
+      'valor' => $valor, 
+      'lin' => $lin,
+      'col' => ($col + 1)
+    ]);
+  }
+
   function gravar(array $tabela)
   {
     $f = fopen('./tabelas/lexica/tabela.txt','w');
@@ -224,12 +225,16 @@
     // dd($tabela);
   }
 
-  function dd(...$var)
+  function gravar2(array $tabela)
   {
-    var_dump($var);
-    die;
+    $f = fopen('./tabelas/lexica/tabela.txt','w');
+    foreach ($tabela as $tb) {
+      $linha = $tb['token'].' | '.$tb['lexema'].' | '.$tb['valor'].' | '.$tb['lin'].' | '.$tb['col']."\n";
+      fwrite($f,  $linha);
+    }
+    fclose($f);
+    // dd($tabela);
   }
-
   
   $palavraReservada = array('programa','begin', 'end','if','then','else','while',
     'do','until','repeat','integer','real','all','and','or','string'); # '/(programa | begin | end | if | then | else | while | do | until | repeat | string | integer | real | all | and | or)/'
