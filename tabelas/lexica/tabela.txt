@@ -1,64 +1,65 @@
 programa |  |  | 1 | 1
-ID | teste |  | 1 | 10
-; |  |  | 1 | 15
+numerico |  | 4 | 1 | 10
+id | teste |  | 1 | 12
+; |  |  | 1 | 17
 real |  |  | 2 | 1
-ID | x |  | 2 | 6
+id | x |  | 2 | 6
 , |  |  | 2 | 7
-ID | y |  | 2 | 9
+id | y |  | 2 | 9
 , |  |  | 2 | 10
-ID | z |  | 2 | 12
+id | z |  | 2 | 12
 ; |  |  | 2 | 13
 begin |  |  | 3 | 1
 begin |  |  | 4 | 4
-ID | i1 |  | 5 | 7
+id | i1 |  | 5 | 7
 := |  |  | 5 | 10
-ID | i2 |  | 5 | 13
+id | i2 |  | 5 | 13
 + |  |  | 5 | 16
-NUMERICO |  | 1 | 5 | 18
-NUMERICO |  | 0 | 5 | 19
+numerico |  | 1 | 5 | 18
+numerico |  | 0 | 5 | 19
 . |  |  | 5 | 20
-NUMERICO |  | 2 | 5 | 21
-NUMERICO |  | 2 | 5 | 22
-NUMERICO |  | 2 | 5 | 23
-NUMERICO |  | 2 | 5 | 24
-NUMERICO |  | 2 | 5 | 25
+numerico |  | 2 | 5 | 21
+numerico |  | 2 | 5 | 22
+numerico |  | 2 | 5 | 23
+numerico |  | 2 | 5 | 24
+numerico |  | 2 | 5 | 25
 ; |  |  | 5 | 26
 if |  |  | 6 | 7
 ( |  |  | 6 | 10
 ( |  |  | 6 | 11
-ID | x |  | 6 | 12
+id | x |  | 6 | 12
 = |  |  | 6 | 14
-NUMERICO |  | 2 | 6 | 16
-NUMERICO |  | 0 | 6 | 17
+numerico |  | 2 | 6 | 16
+numerico |  | 0 | 6 | 17
 ) |  |  | 6 | 18
 and |  |  | 6 | 20
 ( |  |  | 6 | 24
-ID | y |  | 6 | 25
+id | y |  | 6 | 25
 <> |  |  | 6 | 26
-NUMERICO |  | 1 | 6 | 28
-NUMERICO |  | 0 | 6 | 29
+numerico |  | 1 | 6 | 28
+numerico |  | 0 | 6 | 29
 ) |  |  | 6 | 30
 ) |  |  | 6 | 31
 then |  |  | 6 | 33
-All |  |  | 7 | 10
+all |  |  | 7 | 10
 ( |  |  | 7 | 14
-ID | l1 |  | 7 | 15
+id | l1 |  | 7 | 15
 ) |  |  | 7 | 17
 ; |  |  | 7 | 18
 while |  |  | 8 | 7
 ( |  |  | 8 | 13
-ID | x |  | 8 | 14
+id | x |  | 8 | 14
 = |  |  | 8 | 16
-NUMERICO |  | 1 | 8 | 18
-NUMERICO |  | 0 | 8 | 19
+numerico |  | 1 | 8 | 18
+numerico |  | 0 | 8 | 19
 ) |  |  | 8 | 20
 do |  |  | 8 | 22
 begin |  |  | 9 | 7
-ID | x |  | 10 | 10
+id | x |  | 10 | 10
 := |  |  | 10 | 12
-NUMERICO |  | 5 | 10 | 15
+numerico |  | 5 | 10 | 15
 + |  |  | 10 | 16
-NUMERICO |  | 5 | 10 | 17
+numerico |  | 5 | 10 | 17
 ; |  |  | 10 | 18
 end |  |  | 11 | 7
 ; |  |  | 11 | 10

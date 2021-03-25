@@ -1,4 +1,4 @@
-programa teste;
+programa 4 teste;
 real x, y, z;
 begin
    begin
