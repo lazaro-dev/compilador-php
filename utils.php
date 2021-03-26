@@ -1,11 +1,19 @@
 <?php
+    //GERAL
     function erro(int $lin, int $col,string $tokenInv ,string $codigo = '1',string $err = 'TOKEN Invalido'):void
     {
         if($codigo === '1') dd('Erro '.$codigo.': na linha '.$lin.':'.$col.' '.$err.' '.$tokenInv.' é extraído da tabela de erros.');
         
         if($codigo === '2') dd('Erro '.$codigo.':  Símbolo '."'".$tokenInv."'".' inesperado. Esperando '.$err.' Linha '.$lin.', coluna '.$col);
     }
-
+    
+    function dd(...$var)
+    {
+        var_dump($var);
+        die;
+    }
+    //-------------------------------------------------------------------------------------------------------------------------------------
+    
     function verifPalavReser(string $token):bool
     {
         $regra = '/^(programa|begin|end|if|then|else|while|do|until|repeat|string|integer|real|all|and|or)$/i';
@@ -54,8 +62,10 @@
         return preg_match($regra, $token);
     }
 
-    function dd(...$var)
-    {
-        var_dump($var);
-        die;
-    }
+  //Sintatico
+
+  function eTipo(string $token):bool
+  {
+      $regra = '/^(string|integer|real)$/i';
+      return preg_match($regra, $token);
+  }

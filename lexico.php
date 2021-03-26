@@ -70,10 +70,11 @@
           }else{
             
             if(verifNumerico($token)) {             
-              while((!ord($linha[$col+1])===13 || !ord($linha[$col+1])===10)&&($linha[$col+1]==='.'||verifNumerico($linha[$col+1]))){
+              while(!(ord($linha[$col+1])===13 || ord($linha[$col+1])===10)&&($linha[$col+1]==='.'||verifNumerico($linha[$col+1]))){
                 verifGeral($linha[$col+1]);
                 $token.= $linha[++$col];
               }
+              
               if($linha[$col]==='.'&& !verifNumerico($linha[$col+1])) erro($linhaCont, $col+1, $linha[$col+1]);
 
               if(!verifAlfabeto($linha[$col+1])||$linha[$col+1]===';'||$linha[$col+1]===')'||verifAritmetico($linha[$col+1])||$token==='.'){                
