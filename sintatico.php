@@ -154,5 +154,16 @@
         return nextToken(fgets($GLOBALS['f']));
     }
 
+    function vWhile($next) {        
+        return nextToken(fgets($GLOBALS['f']));
+    }
+
+    function vIf($next) {        
+        return nextToken(fgets($GLOBALS['f']));
+    }
+
+    function vRepeat($next) {        
+        return nextToken(fgets($GLOBALS['f']));
+    }
     //valor de variavel string
     
