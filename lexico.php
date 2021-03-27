@@ -75,7 +75,7 @@
                 $token.= $linha[++$col];
               }
               
-              if($linha[$col]==='.'&& !verifNumerico($linha[$col+1])) erro($linhaCont, $col+1, $linha[$col+1]);
+              if(($linha[$col]==='.'&& !verifNumerico($linha[$col+1]))||$linha[$col+1]===',') erro($linhaCont, $col+1, $linha[$col+1]);
 
               if(!verifAlfabeto($linha[$col+1])||$linha[$col+1]===';'||$linha[$col+1]===')'||verifAritmetico($linha[$col+1])||$token==='.'){                
                 pushTabela('NUMERICO',$linhaCont,$colToken,null,$token);
