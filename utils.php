@@ -12,6 +12,24 @@
         var_dump($var);
         die;
     }
+
+    function nextToken($linha)
+    {
+        $arg = explode(' | ', trim($linha));
+        if($arg[0] ==="") {
+            fseek($GLOBALS['f'],-36, SEEK_CUR);
+            $arg = explode(' | ', trim(fgets($GLOBALS['f'])));
+            erro($arg[3]+1, '1', verifSimboloInesp(['valor'=>'end']), 2 , ' \'end\'');
+        }
+        return [
+            'token' => $arg[0],
+            'lexema' => $arg[1],
+            'valor' => $arg[2],
+            'lin' => $arg[3],
+            'col' => $arg[4]
+        ];
+    }
+
     //-------------------------------------------------------------------------------------------------------------------------------------
     
     function verifPalavReser(string $token):bool

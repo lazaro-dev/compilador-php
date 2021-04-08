@@ -10,7 +10,7 @@ Begin
 		I4 := 10.5;
 		i4 := 20;
 		I2  := 30;
-		R1 := 1.5;
+		R1 := 15;
 		I5 := i4;
 		R2 := r1;
 		R3 := i1 + r1;
@@ -29,7 +29,7 @@ Begin
 					End;
 				until ( (r1 = 20) or (r3 < 30));
 			End;
-			If ((r1 <> 20) or (i1 <= 30) or (r3 > 30.5) or (i1 >= 0)) then 
+			If ((r1 <> 20) or (i1 <= 30) or (r3 > 30.5) or (i1 >= 0)) then
 				R2 := r3 + 1;
 			else
 			begin
