@@ -3,6 +3,7 @@
 
     include './lexico.php';
 
+    include './semantico.php';
+    
     include './sintatico.php';
 
-    include './semantico.php';

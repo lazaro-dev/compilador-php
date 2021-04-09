@@ -8,8 +8,7 @@
         if($token['valor']!=="") return $token['valor'];
         if($token['lexema']!=="") return $token['lexema'];
         if($token['token']!=="") return $token['token'];
-    }
-       
+    }       
 
     $token =null;
     $counToken = 0;
@@ -20,7 +19,6 @@
             $counToken++;
         }
         $counToken++;
-        //if($counToken=== 3) dd($next );
         if($counToken===2) {
             $next = nextToken(fgets($GLOBALS['f']));
             $next = vPrograma($token, $next);
@@ -29,28 +27,24 @@
         }
         
         while(eTipo($next['token'])) {
-            $next = vDeclaracaoVariaveis(nextToken(fgets($GLOBALS['f'])));
-            
-            if($next['token']==='begin') {
-                $next = vBegin($next);
-                $next = bloco($next);
-                if($next['token']!=='end'){
-                    erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'end\'');
-                }else{
-                    $next = vEnd(nextToken(fgets($GLOBALS['f'])));
-                    $arg = explode(' | ', trim(fgets($GLOBALS['f'])));
-                    if($arg[0]!=="") {
-                        // fseek($GLOBALS['f'],-36, SEEK_CUR);
-                        // $arg = explode(' | ', trim(fgets($GLOBALS['f'])));
-                        erro($arg[3]+1, $arg[4], verifSimboloInesp(['valor'=>$arg[0]]), 2 , ' \'fim do programa\'');
-                    }
+            $next = vDeclaracaoVariaveis(nextToken(fgets($GLOBALS['f'])), $next['token']);            
+        }
+        if($next['token']==='begin') {
+            $next = vBegin($next);
+            $next = bloco($next);
+            if($next['token']!=='end'){
+                erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'end\'');
+            }else{
+                $next = vEnd(nextToken(fgets($GLOBALS['f'])));
+                $arg = explode(' | ', trim(fgets($GLOBALS['f'])));
+                if($arg[0]!=="") {                        
+                    erro($arg[3]+1, $arg[4], verifSimboloInesp(['valor'=>$arg[0]]), 2 , ' \'fim do programa\'');
                 }
             }
         }
     }
-    dd($next);
-    $bl = array();
-     $co = 0;
+    dd($GLOBALS['var']);
+
     function bloco($next)
     {
         if($next['token']==='if'){            
@@ -60,11 +54,11 @@
             $next = vWhile(nextToken(fgets($GLOBALS['f'])));
         }
         if($next['token']==='id') {
-            $next = vAtribuicao(nextToken(fgets($GLOBALS['f']))); 
-         
+            //semantico
+            $next = vAtribuicao(nextToken(fgets($GLOBALS['f'])));          
         }
-        if($next['token']==='all') {            
-            $next = vAll(nextToken(fgets($GLOBALS['f'])));         
+        if($next['token']==='all') {
+            $next = vAll(nextToken(fgets($GLOBALS['f'])));
         }
         
         if($next['token']==='repeat') {                        
@@ -97,8 +91,7 @@
             'col' => $arg[4]
         ];
         
-        if($next['token']!=='.'){
-            // dd($next);
+        if($next['token']!=='.'){            
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'.\'');
         }
         return $next;
@@ -145,8 +138,7 @@
             if($next['token']===')') {
                 --$cout;                
                 $next = nextToken(fgets($GLOBALS['f']));
-                if($next['token']!==')'&&!verifAritmetico($next['token'])&&$next['token']!==';') { 
-                    // dd();                   
+                if($next['token']!==')'&&!verifAritmetico($next['token'])&&$next['token']!==';') {                                       
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \';\' ou (+-/*)');
                 }
             }
@@ -156,8 +148,7 @@
         }
         if($cout!==0) {            
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\'');
-        }
-        // dd($next);
+        }        
         $next = bloco(nextToken(fgets($GLOBALS['f'])));
         
         return $next;
@@ -177,22 +168,20 @@
         
         if($next['token']!=='until'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'until\''); }
         $next = vExp(nextToken(fgets($GLOBALS['f'])), ';');
-        // dd($next);
+       
         return $next;
     }
 
-    function vWhile($next) {
-        // do{
-            $next = vExp($next,'do');
+    function vWhile($next) {       
+        $next = vExp($next,'do');
 
-            if($next['token']!=='end'){
-                erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'end\'');        
-            }
+        if($next['token']!=='end'){
+            erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'end\'');        
+        }
         
         $next = nextToken(fgets($GLOBALS['f']));
         if($next['token']!==';'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \';\''); }
-        // }while($next['token']!=='end');
-        
+               
         return bloco(nextToken(fgets($GLOBALS['f'])));
     }
     function vIf($next)
@@ -202,17 +191,15 @@
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'comando\'');
         }
         
-        if($next['token']==='else') {            
-            // return bloco($next);            
+        if($next['token']==='else') {
             $next = vElse(nextToken(fgets($GLOBALS['f'])));
-            // dd($next);
-            
-        }              
+        }
+
         if($next['token']==='end') {
             $next = nextToken(fgets($GLOBALS['f']));        
             if($next['token']!==';'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \';\''); }            
-        }        
-        
+        }
+
         return bloco(nextToken(fgets($GLOBALS['f'])));
     }
 
@@ -222,28 +209,21 @@
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'begin\'');
         }            
         $next = nextToken(fgets($GLOBALS['f']));
-        $i=0;
-        // do{
-            $next = bloco($next);
-            // ++$i;
-            
-            // dd($next);
-        // }while($next['token']!=='end');
+        $i=0;        
+        $next = bloco($next);         
         if($next['token']!=='end'){
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'end\'');        
         }
-        return $next; 
-        // dd($next);
-        // dd($next);
+        return $next;        
 
-        $next = nextToken(fgets($GLOBALS['f']));
-        if($next['token']!==';'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \';\''); }
-        // dd($next);
-        return nextToken(fgets($GLOBALS['f']));
+        // $next = nextToken(fgets($GLOBALS['f']));
+        // if($next['token']!==';'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \';\''); }
+        // // dd($next);
+        // return nextToken(fgets($GLOBALS['f']));
     }
+
     function vExp($next, $PARA='then') {
-        $cout = 0;
-        
+        $cout = 0;    
         $ari = false;
         $rel = false;
         $dent = false;
@@ -305,15 +285,13 @@
                 if($next['token']!==')'&&!verifRelacional($next['token'])&&!verifAritmetico($next['token'])) {
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\' , \'(relacional)\'');
                 }
-                if((verifRelacional($next['token'])&&($rel||$ari)&&$dent)||(verifAritmetico($next['token'])&&$rel&&$dent&&$ari)){
-                    // dd((verifAritmetico($next['token'])&&$rel&&$dent));
+                if((verifRelacional($next['token'])&&($rel||$ari)&&$dent)||(verifAritmetico($next['token'])&&$rel&&$dent&&$ari)){                  
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\' ou \'(expressão valida)\'');
-                }      
+                }
             }
 
             if($next['token']===')') {
-                $next = nextToken(fgets($GLOBALS['f']));
-                
+                $next = nextToken(fgets($GLOBALS['f']));                
                 if(verifBooleano($next['token'])&&$ari){
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'(expressão valida)\'');
                 }
@@ -342,8 +320,7 @@
         if($cout!==0) {   
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'()\'');
         }
-
-        //dd($next);
+        
         return bloco(nextToken(fgets($GLOBALS['f'])));
     }
     
@@ -362,12 +339,25 @@
         return nextToken(fgets($GLOBALS['f']));
     }
 
-    function vDeclaracaoVariaveis($next) {
+    function vDeclaracaoVariaveis($next, $tipo) {
         while($next['token'] !== ';'){
             if($next['token'] !== "id" && $next['token'] !== ','){
                 erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'begin\' ou \'(string|real|inteiro)\' ');
             }
-            $next = nextToken(fgets($GLOBALS['f']));
+            if($next['token'] === "id"){
+                vDecVariavel($next, $tipo);//semantico
+                
+                $next = nextToken(fgets($GLOBALS['f']));
+                if($next['token'] !== ','&&$next['token'] !== ';'){
+                    erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \',\' ou \';\' ');
+                }
+            }
+            if($next['token'] === ","){
+                $next = nextToken(fgets($GLOBALS['f']));
+                if($next['token'] !== 'id'){
+                    erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'id\' ');
+                }
+            }           
         }
         return nextToken(fgets($GLOBALS['f']));
     }

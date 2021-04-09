@@ -4,7 +4,9 @@
     {
         if($codigo === '1') dd('Erro '.$codigo.': na linha '.$lin.':'.$col.' '.$err.' '.$tokenInv.' é extraído da tabela de erros.');
         
-        if($codigo === '2') dd('Erro '.$codigo.':  Símbolo '."'".$tokenInv."'".' inesperado. Esperando '.$err.' Linha '.$lin.', coluna '.$col);
+        if($codigo === '2') dd('Erro '.$codigo.':  Símbolo '."'".$tokenInv."'".' inesperado. Esperando '.$err.' Linha '.$lin.', Coluna '.$col);
+
+        if($codigo === '3' || $codigo === '4' || $codigo === '5') dd('Erro '.$codigo.': '.$err.'  Linha '.$lin.', Coluna '.$col);
     }
     
     function dd(...$var)
@@ -31,7 +33,7 @@
     }
 
     //-------------------------------------------------------------------------------------------------------------------------------------
-    
+
     function verifPalavReser(string $token):bool
     {
         $regra = '/^(programa|begin|end|if|then|else|while|do|until|repeat|string|integer|real|all|and|or)$/i';

@@ -1,16 +1,16 @@
 
 
 programa teste;
-real x, y, z ;
 real x, y, z;
+real a, b, c;
 begin
    begin
       i1 := ((i2 + 10.22222)+(xj * 15 / k *(9)))+();
       if ((x = 20) and (y<>10)) then
          All (l1);
-      while (x = 10) do
-      begin
-         x := 5+5;
-      end;    
+         while (x = 10) do
+            x := 5+5;
+         end;    
+      end;
    end;
 end.
