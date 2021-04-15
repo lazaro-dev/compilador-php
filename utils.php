@@ -6,7 +6,10 @@
         
         if($codigo === '2') dd('Erro '.$codigo.':  Símbolo '."'".$tokenInv."'".' inesperado. Esperando '.$err.' Linha '.$lin.', Coluna '.$col);
 
-        if($codigo === '3' || $codigo === '4' || $codigo === '5') dd('Erro '.$codigo.': '.$err.'  Linha '.$lin.', Coluna '.$col);
+        if($codigo === '3') dd('Erro '.$codigo.': Tipos incompatíveis. '."'".$err."'".' e '."'".$tokenInv."'".'  Linha '.$lin.', Coluna '.$col);
+
+        if($codigo === '4' || $codigo === '5') dd('Erro '.$codigo.': '.$err.'  Linha '.$lin.', Coluna '.$col);
+    
     }
     
     function dd(...$var)
@@ -32,6 +35,13 @@
         ];
     }
 
+
+    function verifSimboloInesp($token)
+    {
+        if($token['valor']!=="") return $token['valor'];
+        if($token['lexema']!=="") return $token['lexema'];
+        if($token['token']!=="") return $token['token'];
+    }      
     //-------------------------------------------------------------------------------------------------------------------------------------
 
     function verifPalavReser(string $token):bool

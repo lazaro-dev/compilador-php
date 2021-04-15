@@ -144,7 +144,7 @@
 
   function pushTabela(string $token, int $lin, int $col, string $lexema=null,  string $valor=null):void
   {           
-    $linha = strtolower($token).' | '.$lexema.' | '.$valor.' | '.$lin.' | '.($col+1)."\n";
+    $linha = strtolower($token).' | '.strtolower($lexema).' | '.$valor.' | '.$lin.' | '.($col+1)."\n";
     fwrite($GLOBALS['fout'],  $linha);
   }
 

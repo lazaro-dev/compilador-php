@@ -4,11 +4,12 @@ Programa teste;
 	String s1, s2, s3;
 	Integer i4, i5, i6;
 	Real r1, r2, r3, r4;
-								
+	string x;				
 Begin
 	Begin
-		I4 := 10.5;
-		i4 := 20;
+		I3 := 10;
+		i4 := 20*r2;
+		s1 := s1;
 		I2 := 30;
 		R1 := 15;
 		I5 := i4;
@@ -27,9 +28,9 @@ Begin
 						R2 := r2 + 2;
 						R3 := r3 + 3;
 					End;
-				until ( (r1 = 20) or (r3 < 30));
+				until ( (r2 = 20) or (r3 < 30));
 			End;
-			If ((r1 <> 20) or (i1 <= 30) or (r3 > 30.5) or (i1 >= 0)) then
+			If ((r1 <> 20) or (i1 <= 30) or (r3 > 30.5) or (i6 >= 0)) then
 				R2 := r3 + 1;
 			else
 			begin
