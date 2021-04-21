@@ -2,7 +2,7 @@
     //GERAL
     function erro(int $lin, int $col,string $tokenInv ,string $codigo = '1',string $err = 'TOKEN Invalido'):void
     {
-        if($codigo === '1') dd('Erro '.$codigo.': na linha '.$lin.':'.$col.' '.$err.' '.$tokenInv.' é extraído da tabela de erros.');
+        if($codigo === '1') dd('Erro '.$codigo.': na linha '.$lin.':'.$col.' '.$err.' \''.$tokenInv.'\' é extraído da tabela de erros.');
         
         if($codigo === '2') dd('Erro '.$codigo.':  Símbolo '."'".$tokenInv."'".' inesperado. Esperando '.$err.' Linha '.$lin.', Coluna '.$col);
 

@@ -4,13 +4,13 @@ Programa teste;
 	String s1, s2, s3;
 	Integer i4, i5, i6;
 	Real r1, r2, r3, r4;
-	string x;				
+	string x;
 Begin
 	Begin
-		I3 := 10;
-		i4 := 20*r2;
+		{{I3 := 10;
+		i4 := 20*r2;}
 		s1 := s1;
-		I2 := 30;
+		I2 := 30;{
 		R1 := 15;
 		I5 := i4;
 		R2 := r1;
@@ -36,7 +36,7 @@ Begin
 			begin
 				R2 := r2 + 1;
 			End;
-			All (s1, i2);
+			All (s1, s2);
 		End;
 	end;
 End.

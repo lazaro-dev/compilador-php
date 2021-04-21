@@ -5,7 +5,7 @@
   $fout = fopen('./tabelas/lexica/tabela.txt','w');
   $linhaCont = 0;
   while($linha = fgets($file)){
-    $ete = ord($linha);
+    // $ete = ord($linha);
     if($linha){
       $tamanhoLinha = strlen($linha);
       $token = null;
@@ -15,12 +15,27 @@
         if(comparaEte($linha[$col])){
           while(($col<$tamanhoLinha)&&comparaEte($linha[$col])){
             $col++;
-          }           
-        } 
+          }          
+        }
         
         if($col<$tamanhoLinha){
-          verifGeral($linha[$col]);        
-          if($linha[$col]=='{') while('}' !== $linha[$col]) $col++;
+          verifGeral($linha[$col]);
+          
+          if($linha[$col]==='}') erro($linhaCont, $col+1,'}');
+
+          if($linha[$col]==='{') {
+            while('}' !== $linha[$col]){
+              if(ord($linha[$col])===10 || ord($linha[$col])===13){
+                $linha = fgets($file);
+                $tamanhoLinha = strlen($linha);
+                $token = null;
+                $linhaCont++;
+                $col=0;
+              }
+              if(feof($file)) erro($linhaCont, $col+1,' EOF ');
+              $col++;
+            }
+          }
           
           if(ord($linha[$col])!==13 && $linha[$col]!==' '){
             if($token === null) $colToken = $col;
@@ -37,9 +52,8 @@
                 if($linha[$col+1]===' '&&$linha[$col]===':') erro($linhaCont, $col+1, $linha[$col+1]);
               }
             }
-            
-            
-            if( $token!==null && (verifAritmetico($token) || verifEspeciais($token) ||  verifRelacional($token))){        
+                        
+            if( $token!==null && (verifAritmetico($token) || verifEspeciais($token) ||  verifRelacional($token))){
               $token = $linha[$col];
               pushTabela($token,$linhaCont,$colToken);
               $token = null;

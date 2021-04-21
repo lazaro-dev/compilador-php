@@ -36,8 +36,10 @@
             }
         }
     }
-    dd("SEM ERROS!?");
-    dd($GLOBALS['var']);
+    echo "<h1>Compilado com sucesso</h1>";
+    echo "<a href='index.html'>Selecionar novo arquivo</a>";
+    // dd("SEM ERROS!?");
+    // dd($GLOBALS['var']);
 
     function bloco($next)
     {
@@ -217,11 +219,7 @@
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'end\'');        
         }
         return $next;        
-
-        // $next = nextToken(fgets($GLOBALS['f']));
-        // if($next['token']!==';'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \';\''); }
-        // // dd($next);
-        // return nextToken(fgets($GLOBALS['f']));
+        
     }
 
     function vExp($next, $PARA='then') {
@@ -390,7 +388,7 @@
         return nextToken(fgets($GLOBALS['f']));
     }
 
-    function vBegin($next) {        
+    function vBegin($next) {
         if($next['token']==='begin') {
             $next = nextToken(fgets($GLOBALS['f']));
             if($next['token']==='begin') {
