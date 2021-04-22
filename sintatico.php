@@ -36,8 +36,8 @@
             }
         }
     }
-    echo "<h1>Compilado com sucesso</h1>";
-    echo "<a href='index.html'>Selecionar novo arquivo</a>";
+    echo "<h1>Sem Erros</h1>";
+    echo "<a href='index.html'>Voltar</a>";
     // dd("SEM ERROS!?");
     // dd($GLOBALS['var']);
 
@@ -351,8 +351,8 @@
     }
     
     function vPrograma($token, $next){
-        if(($token['token'] !== 'programa')){
-            erro($token['lin'], $token['col'], verifSimboloInesp($token), 2 , ' \'programa\'');
+        if(($token['token'] !== 'program')){
+            erro($token['lin'], $token['col'], verifSimboloInesp($token), 2 , ' \'program\'');
         }
         if(($next['token'] !== 'id')){
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'ID\'');

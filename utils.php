@@ -46,7 +46,7 @@
 
     function verifPalavReser(string $token):bool
     {
-        $regra = '/^(programa|begin|end|if|then|else|while|do|until|repeat|string|integer|real|all|and|or)$/i';
+        $regra = '/^(program|begin|end|if|then|else|while|do|until|repeat|string|integer|real|all|and|or)$/i';
         return preg_match($regra, $token);
     }
 
