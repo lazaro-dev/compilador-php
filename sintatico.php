@@ -6,6 +6,11 @@
     $token =null;
     $counToken = 0;
 
+    $linTres = null;
+    $label = 0;
+    $ArrLab = [];
+
+
     while($linha = fgets($GLOBALS['f'])) {
         if($token===null) {
             $token = nextToken($linha);
@@ -51,8 +56,9 @@
         }
         if($next['token']==='id') {
             //semantico
+            $GLOBALS['linTres'] = $next['lexema']; //x:= 45 + 1
             varNaoDeclarada($next);
-            setTipoCompativel($next);            
+            setTipoCompativel($next);
             $next = vAtribuicao(nextToken(fgets($GLOBALS['f'])));
         }
         if($next['token']==='all') {
@@ -100,12 +106,14 @@
         if($next['token']!==':=') {             
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \':=\'');
         }
+        $GLOBALS['linTres'] .= $next['token'];
         $next = nextToken(fgets($GLOBALS['f']));
         if($next['token'] === ';') erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'id\' ou \'numerico\'');
         $cout = 0;
         while($next['token'] !== ';'){
             if($next['token']==='id'){
                 //semantico
+                $GLOBALS['linTres'] .= $next['lexema'];
                 varNaoDeclarada($next);
                 tipoCompativel($next);
                 $next = nextToken(fgets($GLOBALS['f']));
@@ -116,6 +124,7 @@
 
             if(verifAritmetico($next['token'])) {
                 tipoCompativel($next);
+                $GLOBALS['linTres'] .= $next['token'];
                 $next = nextToken(fgets($GLOBALS['f']));
                 if($next['token']!=='id' &&$next['token']!=='numerico' &&$next['token']!=='(') {
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'id\' ou \'numerico\'');
@@ -123,6 +132,7 @@
             }
             
             if($next['token']==='('){
+                // $GLOBALS['linTres'] .= $next['token'];
                 ++$cout;                
                 $next = nextToken(fgets($GLOBALS['f']));
                 if($next['token']!=='id' &&$next['token']!=='numerico' &&$next['token']!=='('&&$next['token']!==')'&&$next['token']!=='-') {
@@ -131,6 +141,7 @@
             }
                       
             if($next['token']==='numerico'){ 
+                $GLOBALS['linTres'] .= $next['valor'];
                 tipoCompativel($next);
                 $next = nextToken(fgets($GLOBALS['f']));
                 if($next['token']!==')'&&!verifAritmetico($next['token'])&&$next['token']!==';') {
@@ -139,6 +150,7 @@
             }
 
             if($next['token']===')') {
+                // $GLOBALS['linTres'] .= $next['token'];
                 --$cout;                
                 $next = nextToken(fgets($GLOBALS['f']));
                 if($next['token']!==')'&&!verifAritmetico($next['token'])&&$next['token']!==';') {                                       
@@ -153,13 +165,14 @@
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\'');
         } 
         setTipoCompativel(null);
+        setTres($GLOBALS['linTres'] );
         $next = bloco(nextToken(fgets($GLOBALS['f'])));
         
         return $next;
     }
 
     function vRepeat($next) {
-        do{           
+        do{
             if($next['token']!=='begin'){                
                 erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'begin\'');
              }            
@@ -223,7 +236,7 @@
     }
 
     function vExp($next, $PARA='then') {
-        $cout = 0;    
+        $cout = 0;
         $ari = false;
         $rel = false;
         $dent = false;
@@ -244,6 +257,7 @@
                 //semantico
                 varNaoDeclarada($next);
                 tipoCompativelExp($next);
+                $GLOBALS['linTres'] .= $next['lexema'];
                 $next = nextToken(fgets($GLOBALS['f']));
                 if(!verifRelacional($next['token'])&&$next['token'] !== ')'&&!verifAritmetico($next['token'])) {
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\' ou \'(relacional)\'');
@@ -257,6 +271,7 @@
                 //semantico
                 tipoCompativelExp($next);
                 $rel = true;
+                $GLOBALS['linTres'] .= $next['token'];
                 $next = nextToken(fgets($GLOBALS['f']));
                 if($next['token']!=='id' &&$next['token']!=='numerico'&&$next['token']!=='(') {
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'id\' ou \'numerico\'');
@@ -266,6 +281,7 @@
             if(verifBooleano($next['token'])) {
                 //semantico
                 // tipoCompativelExp($next);
+                $GLOBALS['linTres'] .= $next['token'];
                 $bol = true;
                 $next = nextToken(fgets($GLOBALS['f']));
                 if($next['token']!=='(') {
@@ -275,6 +291,7 @@
 
             if(verifAritmetico($next['token'])) {
                 tipoCompativelExp($next);
+                $GLOBALS['linTres'] .= $next['token'];
                 $ari = true;
                 if($bol){
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'11(expressão valida)\'');
@@ -286,7 +303,8 @@
                 }
             }
             
-            if($next['token']==='('){                                
+            if($next['token']==='('){
+                // $GLOBALS['linTres'] .= $next['token'];                        
                 ++$cout;      
                 $dent = true;
                 $next = nextToken(fgets($GLOBALS['f']));
@@ -299,6 +317,7 @@
             if($next['token']==='numerico'){
                 //semantico
                 tipoCompativelExp($next);
+                $GLOBALS['linTres'] .= $next['valor'];
                 $next = nextToken(fgets($GLOBALS['f']));
                 if($next['token']!==')'&&!verifRelacional($next['token'])&&!verifAritmetico($next['token'])) {
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\' , \'(relacional)\'');
@@ -311,6 +330,7 @@
             
 
             if($next['token']===')') {
+                // $GLOBALS['linTres'] .= $next['token'];
                 $next = nextToken(fgets($GLOBALS['f']));              
                 
                 if(verifBooleano($next['token'])&&$ari){
@@ -346,7 +366,7 @@
         
         //semantico
         set();
-
+        setArrLab();
         return bloco(nextToken(fgets($GLOBALS['f'])));
     }
     
