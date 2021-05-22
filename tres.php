@@ -7,23 +7,24 @@
   $temp = 0;
   function setTres($l) {
     // dd('aa');
-    $GLOBALS['label']++;
+    // $GLOBALS['label']++;
     $linha = $l."\n";
     fwrite($GLOBALS['ft'],  $linha);
     $GLOBALS['linTres'] = null;
   }
   
   function setArrLab()
-  {
-    $h = explode('and',$GLOBALS['linTres']);
-    if(count($h)===0){
-      $h = explode('or',$GLOBALS['linTres']);
-    }
-    $h[0] = '#tmp'.$GLOBALS['temp'].':=';
-    $GLOBALS['temp']++;
-    dd($GLOBALS['linTres']);
-    
+  {    
+    $it= "#tmp1 := ".trim($GLOBALS['linTres']);
+    $it1 = "if not #tmp1 goto LABEL".$GLOBALS['label'];
+    $GLOBALS['label']++;
+    setTres($it);
+    setTres($it1);
   }
+
+
+
+
 
   // $no = new No('0');
   // $arvore = new Arvore();
@@ -43,3 +44,44 @@
   // }
   // dd($h);  
   // dd('fim');
+
+
+
+
+  // function setArrLab()
+  // {
+  //   $itens = explode(' ',trim($GLOBALS['linTres']));
+  //   $qtd = count($itens);
+  //   $temp = null;
+  //   $i = 0;
+  //   $op = 0;
+  //   $arr =[];
+  //   foreach ($itens as $key => $iten) {
+  //     if(verifAritmetico($iten) || verifRelacional($iten) || verifBooleano($iten)){
+  //       $i++;
+  //     }
+  //     if($op === 2){
+  //       $op = 0;
+  //       $temp = null;
+  //       continue; 
+  //     }
+  //     if($op ===0){
+  //       if(!array_key_exists('temp1', $arr)){
+  //         $arr['temp1'] = 
+  //       }
+  //       $temp .= 'temp1';
+  //     }
+  //     $op++;
+  //     $temp .= $iten;
+  //   }
+
+  //   dd($itens);
+  //   $h = explode('and',$GLOBALS['linTres']);
+  //   if(count($h)===0){
+  //     $h = explode('or',$GLOBALS['linTres']);
+  //   }
+  //   $h[0] = '#tmp'.$GLOBALS['temp'].':=';
+  //   $GLOBALS['temp']++;
+  //   // dd($GLOBALS['linTres']);
+    
+  // }

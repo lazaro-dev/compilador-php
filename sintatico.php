@@ -62,6 +62,7 @@
             $next = vAtribuicao(nextToken(fgets($GLOBALS['f'])));
         }
         if($next['token']==='all') {
+            $GLOBALS['linTres'] = 'all';
             $next = vAll(nextToken(fgets($GLOBALS['f'])));
         }
         
@@ -151,9 +152,9 @@
 
             if($next['token']===')') {
                 // $GLOBALS['linTres'] .= $next['token'];
-                --$cout;                
+                --$cout;
                 $next = nextToken(fgets($GLOBALS['f']));
-                if($next['token']!==')'&&!verifAritmetico($next['token'])&&$next['token']!==';') {                                       
+                if($next['token']!==')'&&!verifAritmetico($next['token'])&&$next['token']!==';') {
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \';\' ou (+-/*)');
                 }
             }
@@ -161,11 +162,11 @@
                 erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'id\' ou \'numerico\'');
             }
         }
-        if($cout!==0) {            
+        if($cout!==0) {
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\'');
-        } 
+        }
         setTipoCompativel(null);
-        setTres($GLOBALS['linTres'] );
+        setTres($GLOBALS['linTres']);
         $next = bloco(nextToken(fgets($GLOBALS['f'])));
         
         return $next;
@@ -173,19 +174,19 @@
 
     function vRepeat($next) {
         do{
-            if($next['token']!=='begin'){                
+            if($next['token']!=='begin'){
                 erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'begin\'');
-             }            
+             }
             $next = bloco(nextToken(fgets($GLOBALS['f'])));
         }while($next['token']!=='end');
         $next = nextToken(fgets($GLOBALS['f']));
 
         if($next['token']!==';'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \';\''); }
         $next = nextToken(fgets($GLOBALS['f']));
-        
+
         if($next['token']!=='until'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'until\''); }
         $next = vExp(nextToken(fgets($GLOBALS['f'])), ';');
-       
+
         return $next;
     }
 
@@ -203,15 +204,21 @@
     }
     function vIf($next)
     {        
+        $lb = 0;
         $next = vExp($next,'then');
         if($next['token']!=='end'&&$next['token']!=='else'){
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'comando\'');
         }
         
         if($next['token']==='else') {
+            setTres('goto LABEL'.$GLOBALS['label']);
+            $a = ($GLOBALS['label']-1);
+            // dd($GLOBALS['linTres']);
+            $GLOBALS['linTres'] = ($GLOBALS['linTres']===null)? $GLOBALS['linTres']." LABEL".$a:'LABEL'.$a;
+            $GLOBALS['label']++;
             $next = vElse(nextToken(fgets($GLOBALS['f'])));
         }
-
+        
         if($next['token']==='end') {
             $next = nextToken(fgets($GLOBALS['f']));        
             if($next['token']!==';'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \';\''); }            
@@ -251,13 +258,14 @@
         if($next['token']!=='id'&&$next['token']!=='('&&$next['token']!=='numerico') {
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'id\' ou \'numerico\'');
         }
-
+        $l = $GLOBALS['linTres'];
+        $GLOBALS['linTres'] = null;
         while($next['token']!==$PARA) {
             if($next['token']==='id'){
                 //semantico
                 varNaoDeclarada($next);
-                tipoCompativelExp($next);
-                $GLOBALS['linTres'] .= $next['lexema'];
+                tipoCompativelExp($next);                
+                $GLOBALS['linTres'] .= ' '.$next['lexema'];
                 $next = nextToken(fgets($GLOBALS['f']));
                 if(!verifRelacional($next['token'])&&$next['token'] !== ')'&&!verifAritmetico($next['token'])) {
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\' ou \'(relacional)\'');
@@ -267,11 +275,11 @@
                 }                
             }
 
-            if(verifRelacional($next['token'])) {                
+            if(verifRelacional($next['token'])) {
                 //semantico
                 tipoCompativelExp($next);
                 $rel = true;
-                $GLOBALS['linTres'] .= $next['token'];
+                $GLOBALS['linTres'] .= ' '.$next['token'];
                 $next = nextToken(fgets($GLOBALS['f']));
                 if($next['token']!=='id' &&$next['token']!=='numerico'&&$next['token']!=='(') {
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'id\' ou \'numerico\'');
@@ -281,7 +289,7 @@
             if(verifBooleano($next['token'])) {
                 //semantico
                 // tipoCompativelExp($next);
-                $GLOBALS['linTres'] .= $next['token'];
+                $GLOBALS['linTres'] .= ' '.$next['token'];
                 $bol = true;
                 $next = nextToken(fgets($GLOBALS['f']));
                 if($next['token']!=='(') {
@@ -291,7 +299,7 @@
 
             if(verifAritmetico($next['token'])) {
                 tipoCompativelExp($next);
-                $GLOBALS['linTres'] .= $next['token'];
+                $GLOBALS['linTres'] .= ' '.$next['token'];
                 $ari = true;
                 if($bol){
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'11(expressão valida)\'');
@@ -317,7 +325,7 @@
             if($next['token']==='numerico'){
                 //semantico
                 tipoCompativelExp($next);
-                $GLOBALS['linTres'] .= $next['valor'];
+                $GLOBALS['linTres'] .= ' '.$next['valor'];
                 $next = nextToken(fgets($GLOBALS['f']));
                 if($next['token']!==')'&&!verifRelacional($next['token'])&&!verifAritmetico($next['token'])) {
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\' , \'(relacional)\'');
@@ -366,6 +374,7 @@
         
         //semantico
         set();
+        $GLOBALS['linTres'].=$l;
         setArrLab();
         return bloco(nextToken(fgets($GLOBALS['f'])));
     }
@@ -425,7 +434,9 @@
     function vAll($next)
     {
         if($next['token']==='('){
+            $GLOBALS['linTres'] .= $next['token'];
             while($next['token']!==';'){
+                if($next['token']===')') $GLOBALS['linTres'] .= $next['token'];
                 $next = nextToken(fgets($GLOBALS['f']));                
                 if($next['token']!=='id'&&$next['token']!==','&&$next['token']!==')'&&$next['token']!==';'){
                     erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\', \',\' ou \'id\'');
@@ -434,6 +445,7 @@
                     //semantico
                     varNaoDeclarada($next);
                     tipoCompativelAll($next);
+                    $GLOBALS['linTres'] .= $next['lexema'];
                     $next = nextToken(fgets($GLOBALS['f']));
                     if($next['token']!==','&&$next['token']!==')'){
                         erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\' ou \',\'');
@@ -441,17 +453,22 @@
                 }  
 
                 if($next['token']===','){
+                    $GLOBALS['linTres'] .= ',';
                     $next = nextToken(fgets($GLOBALS['f']));
                     //semantico
+                    
                     if($next['token']!=='id'){
                         erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'id\'');
                     }
                     varNaoDeclarada($next);
                     tipoCompativelAll($next);
+                    $GLOBALS['linTres'] .= $next['lexema'];
                 }   
             }
+            
         }else{
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'(\'');
         }
+        setTres($GLOBALS['linTres']);
         return bloco(nextToken(fgets($GLOBALS['f'])));
     }
