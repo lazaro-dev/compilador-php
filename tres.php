@@ -4,7 +4,7 @@
   include 'no.class.php';
   
   $ft = fopen('./tabelas/lexica/intermediario.txt','w');
-  $temp = 0;
+  $temp = 1;
   function setTres($l) {
     // dd('aa');
     // $GLOBALS['label']++;
@@ -13,10 +13,12 @@
     $GLOBALS['linTres'] = null;
   }
   
-  function setArrLab()
+  function setArrLab($lb=null, $n=null)
   {    
-    $it= "#tmp1 := ".trim($GLOBALS['linTres']);
-    $it1 = "if not #tmp1 goto LABEL".$GLOBALS['label'];
+    if($lb!==null) $lb = trim($lb).' ';
+    $it= $lb."#tmp".$GLOBALS['temp']." := ".trim($GLOBALS['linTres']);
+    $it1 = "if not #tmp".$GLOBALS['temp']." goto LABEL".(($n!==null)?$n:$GLOBALS['label']);
+    $GLOBALS['temp']++;
     $GLOBALS['label']++;
     setTres($it);
     setTres($it1);

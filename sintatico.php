@@ -48,28 +48,33 @@
 
     function bloco($next)
     {
-        if($next['token']==='if'){            
+        if($next['token']==='if'){           
             $next = vIf(nextToken(fgets($GLOBALS['f'])));
         }
-        if($next['token']==='while'){          
+        if($next['token']==='while'){
             $next = vWhile(nextToken(fgets($GLOBALS['f'])));
         }
         if($next['token']==='id') {
             //semantico
-            $GLOBALS['linTres'] = $next['lexema']; //x:= 45 + 1
+            if($GLOBALS['linTres']===null){                
+                $GLOBALS['linTres'] = $next['lexema']; //x:= 45 + 1
+            }else{
+                $GLOBALS['linTres'] = $GLOBALS['linTres'].'|'.$next['lexema'];
+            }
             varNaoDeclarada($next);
             setTipoCompativel($next);
             $next = vAtribuicao(nextToken(fgets($GLOBALS['f'])));
         }
         if($next['token']==='all') {
-            $GLOBALS['linTres'] = 'all';
+            // var_dump($GLOBALS['linTres']);
+            // $GLOBALS['linTres'] = 'all';
             $next = vAll(nextToken(fgets($GLOBALS['f'])));
         }
         
         if($next['token']==='repeat') {                        
             $next = vRepeat(nextToken(fgets($GLOBALS['f'])));
         }
-         
+        if($GLOBALS['linTres']!==null) setTres($GLOBALS['linTres']);
         return $next;
     }
 
@@ -107,6 +112,10 @@
         if($next['token']!==':=') {             
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \':=\'');
         }
+
+        // $l = $GLOBALS['linTres'];
+        // $GLOBALS['linTres'] = null;
+        
         $GLOBALS['linTres'] .= $next['token'];
         $next = nextToken(fgets($GLOBALS['f']));
         if($next['token'] === ';') erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'id\' ou \'numerico\'');
@@ -166,16 +175,36 @@
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \')\'');
         }
         setTipoCompativel(null);
-        setTres($GLOBALS['linTres']);
+        $r = explode('|',trim($GLOBALS['linTres']));
+
+        $t=null;
+        if(count($r)===2){
+            // $t = $r[1].' '.$r[0];
+            $t = $r[0].' '.$r[1];
+        }
+
+        if(count($r)===1){
+            $t = $r[0];
+        }
+            // dd(count($r));
+        setTres($t);
+        // setTres($GLOBALS['linTres'].$l);
         $next = bloco(nextToken(fgets($GLOBALS['f'])));
         
         return $next;
     }
 
     function vRepeat($next) {
+        $ent = 0;
         do{
             if($next['token']!=='begin'){
                 erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'begin\'');
+             }
+             if(!$ent){
+                 $ent=1;
+                 $n = $GLOBALS['label'];
+                 $GLOBALS['linTres'] = 'LABEL'.$n;
+                 $GLOBALS['label']++; 
              }
             $next = bloco(nextToken(fgets($GLOBALS['f'])));
         }while($next['token']!=='end');
@@ -185,23 +214,28 @@
         $next = nextToken(fgets($GLOBALS['f']));
 
         if($next['token']!=='until'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'until\''); }
-        $next = vExp(nextToken(fgets($GLOBALS['f'])), ';');
+        $next = vExp(nextToken(fgets($GLOBALS['f'])), ';', $n);
 
         return $next;
     }
 
-    function vWhile($next) {       
+    function vWhile($next) {
+        $l = $GLOBALS['label'];
         $next = vExp($next,'do');
-
-        if($next['token']!=='end'){
-            erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'end\'');        
-        }
         
+        if($next['token']!=='end'){
+            erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'end\'');
+        }
+
+
         $next = nextToken(fgets($GLOBALS['f']));
         if($next['token']!==';'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \';\''); }
-               
+        
+        setTres('goto LABEL'.$l);
+
         return bloco(nextToken(fgets($GLOBALS['f'])));
     }
+
     function vIf($next)
     {        
         $lb = 0;
@@ -211,19 +245,22 @@
         }
         
         if($next['token']==='else') {
-            setTres('goto LABEL'.$GLOBALS['label']);
+            $if = $GLOBALS['label'];
+            setTres('goto LABEL'.$if);
             $a = ($GLOBALS['label']-1);
             // dd($GLOBALS['linTres']);
             $GLOBALS['linTres'] = ($GLOBALS['linTres']===null)? $GLOBALS['linTres']." LABEL".$a:'LABEL'.$a;
             $GLOBALS['label']++;
             $next = vElse(nextToken(fgets($GLOBALS['f'])));
         }
-        
+
+        $GLOBALS['linTres'] = 'LABEL'.$if;
+        // var_dump($GLOBALS['linTres']);
         if($next['token']==='end') {
-            $next = nextToken(fgets($GLOBALS['f']));        
+            $next = nextToken(fgets($GLOBALS['f']));
             if($next['token']!==';'){ erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \';\''); }            
         }
-
+        // asda
         return bloco(nextToken(fgets($GLOBALS['f'])));
     }
 
@@ -242,7 +279,7 @@
         
     }
 
-    function vExp($next, $PARA='then') {
+    function vExp($next, $PARA='then',$n=null) {
         $cout = 0;
         $ari = false;
         $rel = false;
@@ -374,8 +411,21 @@
         
         //semantico
         set();
-        $GLOBALS['linTres'].=$l;
-        setArrLab();
+        // $r = explode('|',trim($GLOBALS['linTres']));
+
+        // $t=null;
+        // if(count($r)===2){
+        //     // $t = $r[1].' '.$r[0];
+        //     $t = $r[0].' '.$r[1];
+        // }
+
+        // if(count($r)===1){
+        //     $t = $r[0];
+        // }
+        //     // dd(count($r));
+        // setTres($t);
+        // $GLOBALS['linTres']=$l.' '.$GLOBALS['linTres'];
+        setArrLab($l,$n);
         return bloco(nextToken(fgets($GLOBALS['f'])));
     }
     
@@ -433,6 +483,8 @@
 
     function vAll($next)
     {
+        $l = ($GLOBALS['linTres']===null)?'':$GLOBALS['linTres'].' ';
+        $GLOBALS['linTres'] = null;
         if($next['token']==='('){
             $GLOBALS['linTres'] .= $next['token'];
             while($next['token']!==';'){
@@ -469,6 +521,6 @@
         }else{
             erro($next['lin'], $next['col'], verifSimboloInesp($next), 2 , ' \'(\'');
         }
-        setTres($GLOBALS['linTres']);
+        setTres($l.'all'.$GLOBALS['linTres']);
         return bloco(nextToken(fgets($GLOBALS['f'])));
     }
