@@ -10,7 +10,7 @@ Begin
 		{{I3 := 10;
 		i4 := 20*r2;}
 		s1 := s1;
-		I2 := 30;
+		I2 := 30*3;
 		R1 := 15;
 		I5 := i4;
 		R2 := r1;
@@ -18,7 +18,7 @@ Begin
 		R4 := (i1 / 10);
 		R4 := (r4) ;
 			All (s1, s1);
-		if (r2>i1) then
+		if (r2<>i1) then
 			All (s1, s1);
 		else
 		Begin

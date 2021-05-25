@@ -41,8 +41,8 @@
             }
         }
     }
-    echo "<h1>Sem Erros</h1>";
-    echo "<a href='index.html'>Voltar</a>";
+    // echo "<h1>Sem Erros</h1>";
+    // echo "<a href='index.html'>Voltar</a>";
     // dd("SEM ERROS!?");
     // dd($GLOBALS['var']);
 

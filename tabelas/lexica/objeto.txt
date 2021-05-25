@@ -1,0 +1,52 @@
+COPY 30, R0 
+COPY 3, R1 
+MUL R1, R0 
+STORE R0, i2 
+COPY i1, R0 
+COPY r1, R1 
+MUL R1, R0 
+STORE R0, r3 
+COPY i1, R0 
+COPY 10, R1 
+MUL R1, R0 
+STORE R0, r4 
+COPY  i1 #tmp1 
+<> r2 #tmp1 
+COPY NOT #tmp1 
+CMP #tmp1 
+JNZ LABEL0 
+LABEL0 COPY   100 #tmp2 
+< r2 #tmp2 
+LABEL0 COPY  NOT #tmp2 
+CMP #tmp2 
+JNZ LABEL2 
+COPY r2, R0 
+COPY 1, R1 
+MUL R1, R0 
+STORE R0, r2 
+LABEL3 COPY  r2, R0 
+LABEL3 COPY  2, R1 
+MUL R1, R0 
+STORE R0, r2  
+COPY r3, R0 
+COPY 3, R1 
+MUL R1, R0 
+STORE R0, r3 
+COPY  30 #tmp3 
+< r3 #tmp3 
+COPY NOT #tmp3 
+CMP #tmp3 
+JNZ LABEL3 
+COPY  20 #tmp4 
+<> r1 #tmp4 
+COPY NOT #tmp4 
+CMP #tmp4 
+JNZ LABEL5 
+COPY r3, R0 
+COPY 1, R1 
+MUL R1, R0 
+STORE R0, r2 
+LABEL5 COPY  r2, R0 
+LABEL5 COPY  1, R1 
+MUL R1, R0 
+STORE R0, r2  

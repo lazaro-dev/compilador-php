@@ -1,5 +1,5 @@
 s1:=s1
-i2:=30
+i2:=30*3
 r1:=15
 i5:=i4
 r2:=r1
@@ -7,7 +7,7 @@ r3:=i1+r1
 r4:=i1/10
 r4:=r4
 all(s1,s1)
-#tmp1 := r2 > i1
+#tmp1 := r2 <> i1
 if not #tmp1 goto LABEL0
 all(s1,s1)
 goto LABEL1

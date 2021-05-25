@@ -9,3 +9,4 @@
     
     include './sintatico.php';
     
+    include './objeto.php';
