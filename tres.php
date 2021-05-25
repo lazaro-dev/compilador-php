@@ -14,8 +14,10 @@
   }
   
   function setArrLab($lb=null, $n=null)
-  {    
-    if($lb!==null) $lb = trim($lb).' ';
+  {
+    if($lb!==null)
+      $lb = trim($lb).' ';    
+
     $it= $lb."#tmp".$GLOBALS['temp']." := ".trim($GLOBALS['linTres']);
     $it1 = "if not #tmp".$GLOBALS['temp']." goto LABEL".(($n!==null)?$n:$GLOBALS['label']);
     $GLOBALS['temp']++;

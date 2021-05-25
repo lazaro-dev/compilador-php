@@ -57,7 +57,7 @@
           $sto = $p.'R0, '.$atr;
           fwrite($GLOBALS['o'],  $load1." \n");
           fwrite($GLOBALS['o'],  $load2." \n");
-          fwrite($GLOBALS['o'],  $mul." \n");
+          fwrite($GLOBALS['o'],  $div." \n");
           fwrite($GLOBALS['o'],  $sto." \n");
         }else{
           $te = null;
@@ -78,7 +78,7 @@
             $sto = $p.'R0, '.$atr;
             fwrite($GLOBALS['o'],  $load1." \n");
             fwrite($GLOBALS['o'],  $load2." \n");
-            fwrite($GLOBALS['o'],  $mul." \n");
+            fwrite($GLOBALS['o'],  $add." \n");
             fwrite($GLOBALS['o'],  $sto." \n");
           }else{
             $te = null;
@@ -99,7 +99,7 @@
               $sto = $p.'R0, '.$atr;
               fwrite($GLOBALS['o'],  $load1." \n");
               fwrite($GLOBALS['o'],  $load2." \n");
-              fwrite($GLOBALS['o'],  $mul." \n");
+              fwrite($GLOBALS['o'],  $sub." \n");
               fwrite($GLOBALS['o'],  $sto." \n");
             }else{
               $te = null;
@@ -191,7 +191,7 @@
                             $atr = $ten[0];
                           }
                           $load1 = $z1.$te[1].' '.$atr;
-                          $load2 = "< ".$te[0].''.$atr;
+                          $load2 = "<= ".$te[0].''.$atr;
                           $load3 = $z1.'NOT '.$atr;
                           $load4 = 'CMP '.$atr;
                           
@@ -216,7 +216,7 @@
                                 $atr = $ten[0];
                               }
                               $load1 = $z1.$te[1].' '.$atr;
-                              $load2 = "< ".$te[0].''.$atr;
+                              $load2 = ">= ".$te[0].''.$atr;
                               $load3 = $z1.'NOT '.$atr;
                               $load4 = 'CMP '.$atr;
                               
@@ -229,6 +229,12 @@
                               fwrite($GLOBALS['o'],  trim('JNZ'.$na[count($na)-1])." \n");
                               }else{
                                 $te = null;
+                                $te = explode("go", trim($ten[1]));
+                                if(count($te)>1){
+                                  $load1 = 'JNZ '.$te[0];
+                              
+                                  fwrite($GLOBALS['o'],  trim($load1)." \n");
+                                }
                                 // $load1 = $z.trim($ten[1]).', '.trim($ten[0]);
                                 // fwrite($GLOBALS['o'],  $load1." \n");
                               }
@@ -266,7 +272,7 @@
   }
 
 
-dd(1);
+// dd(1);
 
 
 

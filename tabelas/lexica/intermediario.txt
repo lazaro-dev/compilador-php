@@ -1,13 +1,12 @@
 s1:=s1
-i2:=30*3
+i2:=30
 r1:=15
 i5:=i4
 r2:=r1
 r3:=i1+r1
-r4:=i1/10
-r4:=r4
-all(s1,s1)
-#tmp1 := r2 <> i1
+r4:=i1/10*r1+i2
+r4:=r4+i1/15.2*r1+i2
+#tmp1 := r2 > i1 or 40 > r1
 if not #tmp1 goto LABEL0
 all(s1,s1)
 goto LABEL1
@@ -16,10 +15,10 @@ if not #tmp2 goto LABEL2
 r2:=r2+1
 LABEL3 r2:=r2+2
 r3:=r3+3
-#tmp3 := r3 < 30
+#tmp3 := r2 = 20 or r3 < 30
 if not #tmp3 goto LABEL3
 goto LABEL2
-#tmp4 := r1 <> 20
+#tmp4 := r1 <> 20 or i1 <= 30 or r3 > 30.5 or i6 >= 0
 if not #tmp4 goto LABEL5
 r2:=r3+1
 goto LABEL6
